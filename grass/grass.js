@@ -1,11 +1,6 @@
-$(function(){
-    $(".bar").hover(function(){
-      $(this).addClass("tilted");
-  
+$(document).ready(function() {
+    $('.bar').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('tilted');
     });
-    $(".bar").mouseout(function(){
-      $(this).removeClass("tilted");
-  
-    });
-  
-  });
+});
