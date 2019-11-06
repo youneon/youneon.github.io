@@ -41,7 +41,9 @@ a:hover {text-decoration: underline;color:#BB99D0;}
     -webkit-animation-iteration-count:  infinite;
     width: 3%;
     height: 20vh;
-    display: block; position:relative;float:left;
+    display: block; 
+    position:relative;
+    float:left;
     background: #252525;
     margin-right:0%;
     margin-left:3.8%;
