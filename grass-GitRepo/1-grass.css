@@ -1,0 +1,126 @@
+@import url("https://use.typekit.net/zzn6vcb.css");
+
+body{
+font-family: itc-benguiat, serif;
+font-weight: 400;
+font-style: normal;
+font-size:1em;
+color:#BB99D0;
+margin:0;padding:0;cursor:grabbing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background-color: #367661;}
+
+a:link {text-decoration: none;color:#BB99D0;}
+a:visited {text-decoration: none;color:#BB99D0;}
+a:hover {text-decoration: underline;color:#BB99D0;}
+.underline {text-decoration:underline;}
+
+.wrap{position:fixed;width:100%;height:100%;top:0;left:0;z-index:100;}
+.wrap audio{position:absolute;left:35%;bottom:2%;width:30%;height:30px;z-index:102;}
+.title{position:fixed; font-size:3em;text-align:center;top:10px;width:100%;height:auto;z-index:103;}
+.desc{position:fixed;font-size:1.3em;text-align:left;bottom:6%;left:10px;width:25%;height:auto;z-index:99;}
+.othertracks {position:fixed;font-size:1.3em;text-align:center;right:-48%;width:100%;height:auto;transform:rotate(90deg);z-index: 104;}
+.rsvg {height:100%;z-index:100;}
+
+
+@-webkit-keyframes rotate {
+    0%, 50%,100% {
+    -webkit-transform: rotate(0deg);}
+    25% {-webkit-transform: rotate(90deg);}
+    75% {-webkit-transform: rotate(-90deg);}
+}
+
+
+.bar 
+{
+  display: block;
+}
+
+.bar span
+{   -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         240s;
+    -webkit-animation-iteration-count:  infinite;
+    width: 3vw;
+    height: 20vh;
+    display: block; 
+    position:relative;
+    float:left;
+    background: #252525;
+    margin-right:0%;
+    margin-left:3.8%;
+
+}
+
+
+.bar:hover
+{transform: perspective(1000000px) rotateY(3deg)rotateZ(3deg);
+transition-duration: 0.5s;
+}
+
+.under{z-index:1;}
+
+.delay1 {-webkit-animation-delay: 1s;}
+.delay2 {-webkit-animation-delay: 2s;}
+.delay3 {-webkit-animation-delay: 3s;}
+.delay4 {-webkit-animation-delay: 4s;}
+.delay5 {-webkit-animation-delay: 5s;}
+.delay6 {-webkit-animation-delay: 6s;}
+.delay7 {-webkit-animation-delay: 7s;}
+.delay8 {-webkit-animation-delay: 8s;}
+.delay9 {-webkit-animation-delay: 9s;}
+.delay10 {-webkit-animation-delay: 10s;}
+.delay11 {-webkit-animation-delay: 11s;}
+.delay12 {-webkit-animation-delay: 12s;}
+.delay13 {-webkit-animation-delay: 13s;}
+.delay14 {-webkit-animation-delay: 14s;}
+.delay15 {-webkit-animation-delay: 15s;}
+.delay16 {-webkit-animation-delay: 16s;}
+.delay17 {-webkit-animation-delay: 17s;}
+.delay18 {-webkit-animation-delay: 18s;}
+.delay19 {-webkit-animation-delay: 19s;}
+.delay20 {-webkit-animation-delay: 20s;}
+.delay21 {-webkit-animation-delay: 21s;}
+.delay22 {-webkit-animation-delay: 22s;}
+.delay23 {-webkit-animation-delay: 23s;}
+.delay24 {-webkit-animation-delay: 24s;}
+.delay25 {-webkit-animation-delay: 25s;}
+.delay26 {-webkit-animation-delay: 26s;}
+.delay27 {-webkit-animation-delay: 27s;}
+.delay28 {-webkit-animation-delay: 28s;}
+.delay29 {-webkit-animation-delay: 29s;}
+.delay30 {-webkit-animation-delay: 30s;}
+.delay31 {-webkit-animation-delay: 31s;}
+.delay32 {-webkit-animation-delay: 32s;}
+.delay33 {-webkit-animation-delay: 33s;}
+.delay34 {-webkit-animation-delay: 34s;}
+.delay35 {-webkit-animation-delay: 35s;}
+.delay36 {-webkit-animation-delay: 36s;}
+.delay37 {-webkit-animation-delay: 37s;}
+.delay38 {-webkit-animation-delay: 38s;}
+.delay39 {-webkit-animation-delay: 39s;}
+.delay40 {-webkit-animation-delay: 40s;}
+.delay41 {-webkit-animation-delay: 41s;}
+.delay42 {-webkit-animation-delay: 42s;}
+.delay43 {-webkit-animation-delay: 43s;}
+.delay44 {-webkit-animation-delay: 44s;}
+.delay45 {-webkit-animation-delay: 45s;}
+.delay46 {-webkit-animation-delay: 46s;}
+.delay47 {-webkit-animation-delay: 47s;}
+.delay48 {-webkit-animation-delay: 48s;}
+.delay49 {-webkit-animation-delay: 49s;}
+.delay50 {-webkit-animation-delay: 50s;}
+.delay51 {-webkit-animation-delay: 51s;}
+.delay52 {-webkit-animation-delay: 52s;}
+.delay53 {-webkit-animation-delay: 53s;}
+.delay54 {-webkit-animation-delay: 54s;}
+.delay55 {-webkit-animation-delay: 55s;}
+.delay56 {-webkit-animation-delay: 56s;}
+.delay57 {-webkit-animation-delay: 57s;}
+.delay58 {-webkit-animation-delay: 58s;}
+.delay59 {-webkit-animation-delay: 59s;}
+.delay60 {-webkit-animation-delay: 60s;}
+
+
