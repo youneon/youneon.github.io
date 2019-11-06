@@ -1,10 +1,10 @@
 $(function(){
     $(".bar").hover(function(){
-      $(this).addClass("touch-hover");
+      $(this).addClass("tilted");
   
     });
     $(".bar").mouseout(function(){
-      $(this).removeClass("touch-hover");
+      $(this).removeClass("tilted");
   
     });
   
