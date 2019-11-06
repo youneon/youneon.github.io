@@ -1,10 +1,10 @@
 $(function(){
-    $(".bar:hover").hover(function(){
-      $(this).addClass("spin");
+    $(".bar").hover(function(){
+      $(this).addClass("touch-hover");
   
     });
-    $(".bar:hover").mouseout(function(){
-      $(this).removeClass("spin");
+    $(".bar").mouseout(function(){
+      $(this).removeClass("touch-hover");
   
     });
   
