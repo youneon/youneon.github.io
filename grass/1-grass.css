@@ -56,7 +56,7 @@ transition-duration: 0.5s;
 }
 
 .touch-hover
-{transform: perspective(1000000px) rotateY(3deg)rotateZ(3deg);
+{transform: perspective(1000000px) rotateY(30deg)rotateZ(30deg);
 transition-duration: 0.5s;
 }
 
