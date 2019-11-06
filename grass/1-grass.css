@@ -50,10 +50,10 @@ a:hover {text-decoration: underline;color:#BB99D0;}
 }
 
 
-.bar:hover
+/*.bar:hover
 {transform: perspective(1000000px) rotateY(3deg)rotateZ(3deg);
 transition-duration: 0.5s;
-}
+}*/
 
 .tilted
 {transform: perspective(1000000px) rotateY(15deg)rotateZ(15deg);
