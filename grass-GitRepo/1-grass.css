@@ -33,11 +33,6 @@ a:hover {text-decoration: underline;color:#BB99D0;}
 }
 
 
-.bar 
-{
-  display: block;
-}
-
 .bar span
 {   -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-name:             rotate;
