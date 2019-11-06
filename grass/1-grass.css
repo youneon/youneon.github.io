@@ -55,8 +55,8 @@ a:hover {text-decoration: underline;color:#BB99D0;}
 transition-duration: 0.5s;
 }
 
-.touch-hover
-{transform: perspective(1000000px) rotateY(30deg)rotateZ(30deg);
+.tilted
+{transform: perspective(1000000px) rotateY(15deg)rotateZ(15deg);
 transition-duration: 0.5s;
 }
 
