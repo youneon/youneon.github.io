@@ -1,0 +1,61 @@
+@import url("https://use.typekit.net/zzn6vcb.css");
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background:#323cb4;width: 100%;
+  overflow: hidden;cursor:grab;
+font-family: itc-benguiat, serif;
+font-weight: 400;
+font-style: normal;
+font-size:1em;
+margin:0;padding:0;
+}
+
+.block-wrap {
+  background-size: 100% 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.block {
+  display: inline-block;
+  float: left;
+  color: #fff;
+  width: 2%;
+  padding: 2%;
+  line-height: 0;
+  background:#252525;
+  -webkit-transition: all 2s ease;
+  -webkit-transition-delay: 3s;
+  -moz-transition: all 2s ease;
+  -moz-transition-delay: 3s;
+  transition: all 2s ease;
+  transition-delay: 3s;
+  text-align: center;
+  opacity:0;
+  -moz-border-radius:100%;
+  border-radius:100%;
+    transform: rotateZ(-45deg);
+}
+
+
+.off {
+  opacity: 1;
+  -moz-border-radius:0;
+  border-radius:0;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+    transform: rotateZ(45deg);
+}
+
+
+
+.wrap{position:fixed;width:100%;height:100%;top:0;left:0;}
+.wrap2 {position:fixed;}
+.title{font-size:1.5em;text-align:center;color:#efad64;top:10px;width:100%;height:auto;z-index:1;}
+.rsvg {height:100%;z-index:100;bottom:0;}
