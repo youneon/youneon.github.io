@@ -22,13 +22,3 @@ $(document).ready(function() {
     }
   });
 });
-
-
-
-
-// $(document).ready(function() {
-//   $('.block').bind('touchstart touchend touchmove', function(e) {
-//       e.preventDefault();
-//       $(this).toggleClass('off');
-//   });
-// });
