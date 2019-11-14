@@ -1,0 +1,205 @@
+* {
+          box-sizing: border-box;
+        }
+
+        html, body {
+          width: 100vw;
+          height: 100vh;
+          padding-top:16px;
+          overflow: hidden;
+          background: #111;
+        }
+
+        h1 {
+          text-indent: -999999px;
+        }
+
+        .action-tip {
+          text-align: center;
+          font-weight: 700;
+          font-size: calc(0.3rem + 3.5vmin);
+          color: #eee;
+        }
+
+        .action-tip>span {
+          text-decoration:line-through;
+        }
+
+        .container {
+          max-height: 100vh;
+          overflow-y: scroll;
+          position: absolute;
+          top: 50%;
+          left: 5%;
+          -ms-scroll-snap-type: y mandatory;
+              scroll-snap-type: y mandatory;
+          -webkit-overflow-scrolling: touch;
+          -ms-transform: rotate(-5deg);
+          -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+        }
+
+        .headline {
+          width: 28vw;
+          height: 10vh;
+          text-align: center;
+          align-items: center;
+          background-color: var(--color);
+          border: 5px solid #444;
+          display: flex;
+          font-family: 'Lexend Deca', sans-serif;
+          font-weight: 700;
+          font-size: calc(0.05rem + 3.5vmin);
+          justify-content: center;
+          overflow: hidden;
+          -webkit-perspective: 1000px;
+                  perspective: 1000px;
+          scroll-snap-align: start;
+        }
+        .headline {
+          --color: #fff;
+        }
+        
+        .word,
+        .char {
+          -webkit-animation-delay: var(--del);
+                  animation-delay: var(--del);
+          -webkit-animation-direction: var(--dir, normal);
+                  animation-direction: var(--dir, normal);
+          -webkit-animation-duration: var(--dur);
+                  animation-duration: var(--dur);
+          -webkit-animation-iteration-count: var(--it, infinite);
+                  animation-iteration-count: var(--it, infinite);
+          -webkit-animation-name: var(--name);
+                  animation-name: var(--name);
+          -webkit-animation-timing-function: var(--tf);
+                  animation-timing-function: var(--tf);
+          -webkit-animation-fill-mode: var(--fill, forwards);
+                  animation-fill-mode: var(--fill, forwards);
+          display: inline-block;
+          position: relative;
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+          z-index: 1;
+
+        }
+
+        .headline--yell .char {
+          --name: yell;
+          --dur: 4s;
+          --tf: ease;
+          -webkit-transform-origin: 50% 100%;
+                  transform-origin: 50% 100%;
+        }
+        @-webkit-keyframes yell {
+          3% {
+            -webkit-transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+                    transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+          }
+          6% {
+            -webkit-transform: scale(calc(1 * var(--distance-percent) + 1.2)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+                    transform: scale(calc(1 * var(--distance-percent) + 1.2)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+          }
+          12% {
+            -webkit-transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+                    transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+          }
+          18% {
+            -webkit-transform: scaleY(1) translateY(-2%);
+                    transform: scaleY(1) translateY(-2%);
+          }
+          25% {
+            -webkit-transform: scaleY(0.98);
+                    transform: scaleY(0.98);
+          }
+          50% {
+            -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+          }
+          75% {
+            -webkit-transform: scale(0.98);
+                    transform: scale(0.98);
+          }
+        }
+        @keyframes yell {
+          3% {
+            -webkit-transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+                    transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+          }
+          6% {
+            -webkit-transform: scale(calc(1 * var(--distance-percent) + 1.2)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+                    transform: scale(calc(1 * var(--distance-percent) + 1.2)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+          }
+          12% {
+            -webkit-transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+                    transform: scale(calc(1 * var(--distance-percent) + 1.5)) rotate(calc(15deg * var(--distance-sine))) translateY(-10%);
+          }
+          18% {
+            -webkit-transform: scaleY(1) translateY(-2%);
+                    transform: scaleY(1) translateY(-2%);
+          }
+          25% {
+            -webkit-transform: scaleY(0.98);
+                    transform: scaleY(0.98);
+          }
+          50% {
+            -webkit-transform: scaleY(1);
+                    transform: scaleY(1);
+          }
+          75% {
+            -webkit-transform: scale(0.98);
+                    transform: scale(0.98);
+          }
+        }
+
+
+        .screen-wrap {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: .3;
+          margin-top: 84px;
+          height: 88vh; 
+          width: 100vw;
+          background: #111;
+        }
+
+        .dontspeak-p {
+          position: relative;
+        }
+
+        .dontspeak-p p {
+          position: absolute;
+          width: 35vw;
+          padding: 1%;
+          word-break: break-all;
+          font-weight: 700;
+          font-size: calc(0.05rem + 3.5vmin);
+          background: var(--color);
+          color: #fff;
+        }
+
+
+        .dontspeak-p.p00 {
+          --color:#008275;
+        }
+
+        .dontspeak-p.p01 {
+          --color:#232f3e;
+        }
+
+        .dontspeak-p.p02 {
+          --color:#1a70dc;
+        }
+
+        .dontspeak-p.p03 {
+          --color:#444444;
+        }
+
+        .dontspeak-p.p04 {
+          --color:#ed3e49;
+        }
+
+        
+
+
