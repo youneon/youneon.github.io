@@ -1,0 +1,84 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {color: #495057; border:0; margin:0; padding:0; font:inherit; vertical-align:baseline;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
+body {font-size:14px; line-height:1;}
+ol, ul {list-style:none;}
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content:''; content:none;}
+table {border-collapse:collapse; border-spacing:0;}
+
+
+@import url(../font/NotoSansKR.css);
+
+/* common */
+* {box-sizing:border-box;}
+html, body {height:100%;}
+body {font-family:"Nanum Barun Gothic", sans-serif;}
+a {text-decoration:none;}
+img {vertical-align:top;}
+table {table-layout:fixed; border-collapse:collapse; width:100%;}
+caption {overflow:hidden; height:0; text-indent:-1000em;}
+legend {overflow:hidden; position:absolute; left:-1000%; height:0;}
+select, button, input[type="text"], input[type="password"], input[type="number"], input[type="email"], textarea {padding: .8em 1em; font-family: inherit; border: 1px solid #cccccc; color: #868E96; font-size: 0.95em; border-radius: 8px; background: #ffffff; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
+input[type="checkbox"] {width: 16px; height: 16px; border-radius: 8px;}
+button {background:none; border:0; margin:0; padding:0; text-align:left; cursor:pointer;}
+select {width: 100%; height: 42px; cursor:pointer; color: #495057; font-size: inherit; background: url('../images/select-arrow.svg') no-repeat 90% 50% #ffffff;}
+select, input[type="text"], input[type="password"] {height: 42px;}
+input[type="radio"], input[type="checkbox"] {display: inline-block; margin: 12px 0px;}
+button {width:100%; height: 42px;}
+select::-ms-expand {display:none;}
+label {cursor:pointer;}
+video {display:block; width:100%; height:100%;}
+input::-ms-clear,
+input::-ms-reveal {display:none;}
+
+/* Align */
+.ac {text-align:center !important;}
+.ar {text-align:right !important;}
+.al {text-align:left !important;}
+.fl {float:left;}
+.fr {float:right;}
+.vt * {vertical-align:top;}
+.vm,
+.vm * {vertical-align:middle !important;}
+.vb,
+.vb * {vertical-align:bottom !important;}
+.ps {position:static !important;}
+
+.elemC {position:absolute !important; left:50%; top:50%; transform:translate(-50%, -50%);}
+
+a{color:#364FC7; text-decoration:none; margin:0px; padding:0px;}
+a:link{color:#364FC7; text-decoration:none; margin:0px; padding:0px;}
+a:hover{color:#364FC7;	text-decoration:none; margin:0px; padding:0px;}
+a:visited{color:#454545; text-decoration:none; margin:0px; padding:0px;}
+
+
+*:first-child+html caption {display:none;}
+caption{display:none}
+
+nav,ol,ul {list-style:none;}
+fieldset {position:absolute; margin:0px; padding:0px; border:0px;}
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0; padding:0px; margin:0px;} 
+
+
+/* Hide & Show */
+.pcView {display:none;}
+
+@media only all and (min-width:1100px) {
+	.mobileView {display:none;}
+	.pcView {display:block;}
+	a.pcView {display:inline;}
+}
+
+/* Temp */
+.of, .elips {overflow:hidden;}
+.clfix:after {content:""; display:block; height:0px; clear:both; visibility:hidden;}
+* html .clfix {height:1%;} /* Hides from IE-mac */
+.clfix {*zoom:1;} /*for IE 5.5-7*/
+.blind {position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0;}
+
+/* tips */
+.notice {color:#F59F00;}

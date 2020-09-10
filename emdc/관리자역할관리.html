@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)https://edu.ibk.co.kr/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="title" content="e-VCM 영상회의시스템">
+	<meta name="keywords" content="e-VCM 영상회의시스템">
+	<meta name="description" content="e-VCM 영상회의시스템">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="robots" content="noindex">
+
+	<title>회의실관리 - e-VCM 영상회의시스템</title>
+
+    <link href="./styles/common.css" rel="stylesheet" type="text/css">
+    <link href="./styles/contents.css" rel="stylesheet" type="text/css">
+    <link href="./styles/layout.css" rel="stylesheet" type="text/css">
+
+	<!--[if !IE]-->
+	<script type="text/javascript" src="./js/cross-browser-function.js"></script>
+	<!--[endif]-->
+
+	<script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="./js/front.js"></script>
+<body>
+    <div id="wrap">
+        
+        <!--nav start-->
+        <section id="nav">
+            <h1>e-VCM</h1>
+            <div class="status">
+                <p><a>홍길동</a>님, 환영합니다. </p>
+                <ul>
+                    <li><a>관리자</a></li>
+                    <li><a>로그아웃</a></li>
+                </ul>
+            </div>
+            
+            <ul>
+                <li><a href=""><i class="icon-elem-nav icon-control">예약관리</i></a></li>
+                <li class="on"><a href="#"><i class="icon-elem-nav icon-meetingroom">회의실관리</i></i> <i class="icon-elem icon-nav-arrow"></i></a>
+                    <ul>
+                        <li class="on">회의실 관리</li>
+                        <li>회의실 위치관리</li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">가상회의실 관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-user">사용자관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-ldap">LDAP | AD연동</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-dashboard">대시보드</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-chart">통계</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-files">녹화파일관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-adminsettings">관리자 역할 관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-adminrights">관리자 권한 관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-systemlog">시스템 로그</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-systemcontrol">시스템 설정</i></a></li>
+            </ul>
+            <div class="add-ons">
+                <button href="#" onclick="" class="btn tertiary">사용자 가이드</button>
+
+                <div>
+                    <label for="">Time Zone</label>
+                    <select id=""> 
+                        <option selected>Seoul(GMT +09:00)</option> 
+                        <option>Seoul(GMT +09:00)</option> 
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Langauge</label>
+                    <select id=""> 
+                        <option selected>Korean</option>
+                    <option>English</option> 
+                    </select>
+                </div>
+
+            </div>
+        </section>
+
+        <!--nav end-->
+
+
+        <section id="container">
+                <h2><span>관리자 역할 관리</span></h2>
+
+        
+            <div class="contents">
+                <div class="search-area">
+                    <form  name="" action="" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select id=""  class="regular"> 
+                                    <option selected>관리자역할</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control large-max input-area" value="">
+                                <button type="submit" class="input-icon"><i class="icon-elem icon-search"></i></button>					
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+
+                <div class="table-wrap">
+                    <div class="inline-right">
+                        <button href="#" onclick="" class="btn cancel regular">선택삭제</button>
+                        <button href="#" onclick="" class="btn primary small">추가</button>
+                    </div>
+
+                    <table>
+                        <caption>회의리스트</caption>
+                        <colgroup>
+                            <col width="8%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="20%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="10%">
+                            <col width="10%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <td> 
+                                    <input type="checkbox" name="" id="meeting-schedule" checked>
+                                    <label for="meeting-schedule"><span>포함</span></label>
+                                </td>
+                                <td>관리번호</td>
+                                <td>역할명</td>
+                                <td>생성자 사번</td>
+                                <td>생성자 이름</td>
+                                <td>생성일</td>
+                                <td>역할 사용여부</td>
+                                <td>수정</td>
+                            </tr>
+                        </thead>
+            
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+    
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+            
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>1</td>
+                                <td>최고관리자</td>
+                                <td>100001</td>
+                                <td>홍길동</td>
+                                <td>2001-02-01</td>
+                                <td>사용</td>
+                                <td><a href="">수정</a></td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+            
+                    <div class="paging-wrap">
+                        <ul>
+                            <li><a href="#"> 맨 처음<i class="icon-elem icon-firstpg"></i></a></li>
+                            <li><a href="#"> 이전 페이지 <i class="icon-elem icon-prev"></i></a></li>
+                            <li><a href="#" class="on"> 1 </a></li>
+                            <li><a href="#"> 2 </a></li>
+                            <li><a href="#"> 3 </a></li>
+                            <li><a href="#"> 5 </a></li>
+                            <li><a href="#"> 6 </a></li>
+                            <li><a href="#"> 7 </a></li>
+                            <li><a href="#"> 8 </a></li>
+                            <li><a href="#"> 9 </a></li>
+                            <li><a href="#"> 10 </a></li>
+                            <li><a href="#"> 다음 페이지  <i class="iconElem icon-next"></i></a></li>
+                            <li><a href="#"> 맨 마지막 <i class="iconElem icon-lastpg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

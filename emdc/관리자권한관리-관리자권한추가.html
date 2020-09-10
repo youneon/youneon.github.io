@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)https://edu.ibk.co.kr/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="title" content="e-VCM 영상회의시스템">
+	<meta name="keywords" content="e-VCM 영상회의시스템">
+	<meta name="description" content="e-VCM 영상회의시스템">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="robots" content="noindex">
+
+	<title>e-VCM 영상회의시스템</title>
+
+    <link href="./styles/common.css" rel="stylesheet" type="text/css">
+    <link href="./styles/contents.css" rel="stylesheet" type="text/css">
+    <link href="./styles/layout.css" rel="stylesheet" type="text/css">
+
+	<!--[if !IE]-->
+	<script type="text/javascript" src="./js/cross-browser-function.js"></script>
+	<!--[endif]-->
+
+	<script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="./js/front.js"></script>
+
+<body>
+    <div id="wrap">
+        
+        <!--nav start-->
+        <section id="nav">
+            <h1>e-VCM</h1>
+            <div class="status">
+                <p><a>홍길동</a>님, 환영합니다. </p>
+                <ul>
+                    <li><a>관리자</a></li>
+                    <li><a>로그아웃</a></li>
+                </ul>
+            </div>
+            
+            <ul>
+                <li><a href=""><i class="icon-elem-nav icon-control">예약관리</i></a></li>
+                <li class="on"><a href="#"><i class="icon-elem-nav icon-meetingroom">회의실관리</i></i> <i class="icon-elem icon-nav-arrow"></i></a>
+                    <ul>
+                        <li class="on">회의실 관리</li>
+                        <li>회의실 위치관리</li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">가상회의실 관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-user">사용자관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-ldap">LDAP | AD연동</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-dashboard">대시보드</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-chart">통계</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-files">녹화파일관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-adminsettings">관리자 역할 관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-adminrights">관리자 권한 관리</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-systemlog">시스템 로그</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-systemcontrol">시스템 설정</i></a></li>
+            </ul>
+            <div class="add-ons">
+                <button href="#" onclick="" class="btn tertiary">사용자 가이드</button>
+
+                <div>
+                    <label for="">Time Zone</label>
+                    <select id=""> 
+                        <option selected>Seoul(GMT +09:00)</option> 
+                        <option>Seoul(GMT +09:00)</option> 
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Langauge</label>
+                    <select id=""> 
+                        <option selected>Korean</option>
+                    <option>English</option> 
+                    </select>
+                </div>
+
+            </div>
+        </section>
+
+        <!--nav end-->
+
+
+        <section id="container">
+            <h2><span>관리자 권한 추가</span></h2>
+
+
+        
+            <div class="contents">
+                <div class="filter">
+                    <form name="" action="" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">관리자역할명</p>
+                            </div>
+                            <div class="form-group"> 
+                                <input type="text" class="form-control large-max" name="" placeholder="" value="관리자 역할명을 입력하십시오.">	
+                            </div>
+                        </div>
+                        
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">예약관리</p>
+                            </div>
+                            <div class="form-group">
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="rec-control"><span>녹화제어</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="rec-control">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="webRTC"><span>WebRTC참여</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="webRTC">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">회의실관리</p>
+                            </div>
+                            <div class="form-group">
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="meeting-room"><span>회의실</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="meeting-room">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="location"><span>회의실위치</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="location">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static">가상회의실관리</p>
+                            </div>
+                            <div class="form-group">
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">사용자관리</p>
+                            </div>
+                            <div class="form-group large-max">
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">LDAP/AD연동</p>
+                            </div>
+                            <div class="form-group large-max">
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">통계</p>
+                            </div>
+                            <div class="form-group large-max">
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                                
+                            </div>
+                        </div>
+
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="meeting-statistics"><span>회의별통계</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="meeting-statistics">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="meetingroom-statistics"><span>회의실별통계</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="meetingroom-statistics">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="department-statistics"><span>부서별통계</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="department-statistics">
+                            </div>
+                        </div>
+
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="user-statistics"><span>사용자별통계</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="user-statistics">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="period-statistics"><span>기간별통계</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="period-statistics">
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">녹화파일 관리</p>
+                            </div>
+                            <div class="form-group"> 
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="play"><span>재생</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="play">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="downloads"><span>다운로드</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="downloads">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="delete"><span>삭제</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="delete">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">관리자 역할 관리</p>
+                            </div>
+                            <div class="form-group"> 
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">관리자 권한 관리</p>
+                            </div>
+                            <div class="form-group"> 
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+                        
+                       
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">시스템로그</p>
+                            </div>
+                            <div class="form-group"> 
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">시스템설정</p>
+                            </div>
+                            <div class="form-group"> 
+                                <select class="large" id=""> 
+                                    <option selected>미사용</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="cms"><span>CMS서버정보관리</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="cms">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="global-profile"><span>전역프로파일 설정</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="global-profile">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="meeting-settings"><span>회의모드 설정</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="meeting-settings">
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="meeting-settings"><span>회의설정</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="meeting-settings">
+                            </div>
+                        </div>
+
+                        <div class="form-row check">
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="macro-calls"><span>매크로콜 설정</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="macro-calls">
+                            </div>
+                            <div class="form-group">
+                                <p class="form-control-static"><label for="notice"><span>공지사항 관리</span></label></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="" id="notice">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <p class="form-control-static">권한 사용여부</p>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <input type="radio" name="use" id="admin-rights">
+                                    <label for="setting"><span>사용</span></label>
+                                    <input type="radio" name="use" id="admin-rights" checked="checked">
+                                    <label for="setting"><span>미사용</span></label>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="align-right">
+                            <button onclick="" class="btn cancel small">취소</button>
+                            <button onclick="" class="btn primary small">확인</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

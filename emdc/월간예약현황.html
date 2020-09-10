@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)https://edu.ibk.co.kr/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="title" content="e-VCM 영상회의시스템">
+	<meta name="keywords" content="e-VCM 영상회의시스템">
+	<meta name="description" content="e-VCM 영상회의시스템">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="robots" content="noindex">
+
+	<title>e-VCM 영상회의시스템</title>
+
+    <link href="./styles/common.css" rel="stylesheet" type="text/css">
+    <link href="./styles/contents.css" rel="stylesheet" type="text/css">
+    <link href="./styles/layout.css" rel="stylesheet" type="text/css">
+
+	<!--[if !IE]-->
+	<script type="text/javascript" src="./js/cross-browser-function.js"></script>
+	<!--[endif]-->
+
+	<script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="./js/front.js"></script>
+<body>
+    <div id="wrap">
+        
+        <!--nav start-->
+        <section id="nav">
+            <h1>e-VCM</h1>
+            <div class="status">
+                <p><a>홍길동</a>님, 환영합니다. </p>
+                <ul>
+                    <li><a>관리자</a></li>
+                    <li><a>로그아웃</a></li>
+                </ul>
+            </div>
+            
+            <ul>
+                <li class="on"><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">마이페이지</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">예약현황</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">영상회의예약</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">즉시회의</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">녹화파일</i></a></li>
+            </ul>
+            <div class="add-ons">
+                <button href="#" onclick="" class="btn tertiary">사용자 가이드</button>
+
+                <div>
+                    <label for="">Time Zone</label>
+                    <select id=""> 
+                        <option selected>Seoul(GMT +09:00)</option> 
+                        <option>Seoul(GMT +09:00)</option> 
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Langauge</label>
+                    <select id=""> 
+                        <option selected>Korean</option>
+                    <option>English</option> 
+                    </select>
+                </div>
+
+            </div>
+        </section>
+
+        <!--nav end-->
+
+
+        <section id="container">
+                <h2><span>월간예약현황</span></h2>
+
+        
+            <div class="contents">
+                <div class="filter">
+                    <form  name="" action="" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button href="#" onclick="" class="btn cancel small-min"><i class="icon-elem icon-prev"></i></button>
+                                <p class="form-control calendar">2020. 4. 27</p>
+                                <button href="#" onclick="" class="btn primary small-min"><i class="icon-elem icon-next"></i></button>
+                            </div>
+                            <div class="form-group">
+                                <button href="#" onclick="" class="btn tertiary small">오늘</button>
+                            </div>  
+                            <div class="form-group regular">
+                                <select id=""> 
+                                    <option selected>회의실위치</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button href="#" onclick="" class="btn primary small">검색</button>
+                            </div>
+                           
+                        </div>
+
+                        <div class="inline-right">
+                            <button href="#" onclick="" class="btn primary regular">목록보기</button>
+                            <button href="#" onclick="" class="btn tertiary regular-min">캘린더보기</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="table-wrap monthly">
+                    <div class="legend-tag">
+                        <ul>
+                            <li><span class="status on">진행중</span></li>
+                            <li><span class="status waiting">진행대기</span></li>
+                            <li><span class="status done">회의종료</span></li>
+                        </ul>
+                    </div>
+                    <div class="schedule">
+                        <table class="data-details">
+                            <caption>회의리스트</caption>
+                            <colgroup>
+                                <col >
+                                <col >
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <td>일</td>
+                                    <td>월</td>
+                                    <td>화</td>
+                                    <td>수</td>
+                                    <td>목</td>
+                                    <td>금</td>
+                                    <td>토</td>
+                                </tr>
+                            </thead>
+                
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>31</span>
+                                    </td>
+                                    <td class="meeting">
+                                        <span>1</span>
+                                        <span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+                                    <td><span>2</span></td>
+                                    <td><span>3</span></td>
+                                    <td><span>4</span></td>
+                                    <td><span>5</span></td>
+                                    <td><span>6</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <span>7</span>
+                                    </td>
+                                    <td></td>
+                                    <td class="meeting">
+                                        <span>8</span>
+                                        <span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+                                    <td><span>9</span></td>
+                                    <td><span>10</span></td>
+                                    <td><span>11</span></td>
+                                    <td><span>12</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span>13</span></td>
+                                    <td><span>14</span></td>
+                                    <td><span>15</span></td>
+                                    <td><span>16</span></td>
+                                    <td><span>17</span></td>
+                                    <td class="meeting">
+                                        <span>18</span>
+                                        <span class="waiting" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+                                    <td><span>19</span></td>
+                                </tr>
+
+                                <tr>
+                                    <td><span>20</span></td>
+                                    <td><span>21</span></td>
+                                    <td><span>22</span></td>
+                                    <td><span>23</span></td>
+                                    <td class="meeting">
+                                        <span>24</span>
+                                        <span class="waiting" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+                                    <td><span>25</span></td>
+                                    <td><span>26</span></td>
+                                </tr>
+                                <tr>
+                                    <td><span>27</span></td>
+                                    <td><span>28</span></td>
+                                    <td><span>29</span></td>
+                                    <td><span>30</span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                    <td><span></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="pop-up small">
+                    <h5>회의정보</h5>
+                    <div class="pop-up-contents">
+                        <dl>
+                            <dt>회의제목 :</dt>
+                            <dd>정기화상회의</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>시작시간 :</dt>
+                            <dd>15:00 ~ 15:15</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>예약자 :</dt>
+                            <dd>홍길동  IT 기획부 차장</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>참석인원 :</dt>
+                            <dd>8명</dd>
+                        </dl>
+
+                    </div>
+                    <div class="close-control">
+                        <button onclick="" class="btn close small-min">
+                            <i class="icon-elem ">닫기</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

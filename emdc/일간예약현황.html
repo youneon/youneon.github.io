@@ -1,0 +1,1957 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0022)https://edu.ibk.co.kr/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="title" content="e-VCM 영상회의시스템">
+	<meta name="keywords" content="e-VCM 영상회의시스템">
+	<meta name="description" content="e-VCM 영상회의시스템">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta name="robots" content="noindex">
+
+	<title>e-VCM 영상회의시스템</title>
+
+    <link href="./styles/common.css" rel="stylesheet" type="text/css">
+    <link href="./styles/contents.css" rel="stylesheet" type="text/css">
+    <link href="./styles/layout.css" rel="stylesheet" type="text/css">
+
+	<!--[if !IE]-->
+	<script type="text/javascript" src="./js/cross-browser-function.js"></script>
+	<!--[endif]-->
+
+	<script type="text/javascript" charset="UTF-8" src="./js/common.js"></script>
+	<script type="text/javascript" charset="UTF-8" src="./js/front.js"></script>
+<body>
+    <div id="wrap">
+        
+        <!--nav start-->
+        <section id="nav">
+            <h1>e-VCM</h1>
+            <div class="status">
+                <p><a>홍길동</a>님, 환영합니다. </p>
+                <ul>
+                    <li><a>관리자</a></li>
+                    <li><a>로그아웃</a></li>
+                </ul>
+            </div>
+            
+            <ul>
+                <li class="on"><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">마이페이지</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">예약현황</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">영상회의예약</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">즉시회의</i></a></li>
+                <li><a href="#"><i class="icon-elem-nav icon-vrmeetingroom">녹화파일</i></a></li>
+            </ul>
+            <div class="add-ons">
+                <button href="#" onclick="" class="btn tertiary">사용자 가이드</button>
+
+                <div>
+                    <label for="">Time Zone</label>
+                    <select id=""> 
+                        <option selected>Seoul(GMT +09:00)</option> 
+                        <option>Seoul(GMT +09:00)</option> 
+                    </select>
+                </div>
+
+                <div>
+                    <label for="">Langauge</label>
+                    <select id=""> 
+                        <option selected>Korean</option>
+                    <option>English</option> 
+                    </select>
+                </div>
+
+            </div>
+        </section>
+
+        <!--nav end-->
+
+
+        <section id="container">
+                <h2><span>일간예약현황</span></h2>
+
+        
+            <div class="contents">
+                <div class="filter">
+                    <form  name="" action="" class="form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <button href="#" onclick="" class="btn cancel small-min"><i class="icon-elem icon-prev"></i></button>
+                                <p class="form-control calendar">2020. 4. 27</p>
+                                <button href="#" onclick="" class="btn primary small-min"><i class="icon-elem icon-next"></i></button>
+                            </div>
+                            <div class="form-group">
+                                <button href="#" onclick="" class="btn tertiary small">오늘</button>
+                            </div>  
+                            <div class="form-group regular">
+                                <select id=""> 
+                                    <option selected>회의실위치</option> 
+                                    <option></option> 
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <button href="#" onclick="" class="btn primary small">검색</button>
+                            </div>
+                           
+                        </div>
+
+                        
+                    </form>
+                </div>
+                
+                <div class="table-wrap">
+                    <div class="inline-right-mt">
+                        <button href="#" onclick="" class="btn excel regular">다운로드</button>
+                    </div>
+                    <div class="legend-tag">
+                        <ul>
+                            <li><span class="status on">진행중</span></li>
+                            <li><span class="status waiting">진행대기</span></li>
+                            <li><span class="status done">회의종료</span></li>
+                        </ul>
+                    </div>
+                    <div class="schedule">
+                        <table class="data-details" style="width: 4080px;">
+                            <caption>회의리스트</caption>
+                            <colgroup>
+                                <col width="312px">
+                                <col widht="120px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <td>회의실명</td>
+                                    <td colspan="3">08:00</td>
+                                    <td colspan="3">08:30</td>
+                                    <td colspan="3">09:00</td>
+                                    <td colspan="3">09:30</td>
+                                    <td colspan="3">10:00</td>
+                                    <td colspan="3">10:30</td>
+                                    <td colspan="3">11:00</td>
+                                    <td colspan="3">11:30</td>
+                                    <td colspan="3">12:00</td>
+                                    <td colspan="3">12:30</td>
+                                    <td colspan="3">13:00</td>
+                                    <td colspan="3">13:30</td>
+                                    <td colspan="3">14:00</td>
+                                    <td colspan="3">14:30</td>
+                                    <td colspan="3">14:00</td>
+                                    <td colspan="3">15:30</td>
+                                    <td colspan="3">15:00</td>
+                                    <td colspan="3">15:30</td>
+                                    <td colspan="3">16:00</td>
+                                    <td colspan="3">16:30</td>
+                                    <td colspan="3">17:00</td>
+                                    <td colspan="3">17:30</td>
+                                    <td colspan="3">18:00</td>
+                                    <td colspan="3">18:30</td>
+                                    <td colspan="3">19:00</td>
+                                    <td colspan="3">19:30</td>
+                                    <td colspan="3">20:00</td>
+                                    <td colspan="3">20:30</td>
+                                    <td colspan="3">21:00</td>
+                                    <td colspan="3">21:30</td>
+                                    <td colspan="3">22:00</td>
+                                    <td colspan="3">22:30</td>
+                                    <td colspan="3">23:00</td>
+                                    <td colspan="3">23:30</td>
+                                </tr>
+                            </thead>
+                
+                            <tbody>
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="waiting" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="done" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="done" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="waiting" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="on" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+
+                                <tr>
+                                    <td>본사 1층 영상회의실</td>
+                                    <td class="meeting"><span class="waiting" style="width:200px;">
+                                        <a href="">9:20-10:30 교육</a>
+                                    </span></td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                    <td> </td>
+
+                                    <td> </td>
+                                    <td> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="pop-up regular">
+                    <h5>예약정보</h5>
+                    <div class="pop-up-contents">
+                        <div class="pop-up-left">
+                            <dl>
+                                <dt>회의제목</dt>
+                                <dd>정기화상회의</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>시작시간</dt>
+                                <dd>2020-04-07  15:00</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>종료시간</dt>
+                                <dd>2020-04-07  15:00</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>예약자</dt>
+                                <dd><span class="strong">아이유 </span>교육팀 대리</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>회의구분</dt>
+                                <dd>강의</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>유형</dt>
+                                <dd>예약회의</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>공개여부</dt>
+                                <dd><span class="primary-color">공개</span></dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>녹화여부</dt>
+                                <dd>녹화</dd>
+                            </dl>
+    
+                            <dl>
+                                <dt>반복여부</dt>
+                                <dd>반복</dd>
+                            </dl>
+    
+                            <dl class="meeting-details">
+                                <dt>회의내용</dt>
+                                <dd>
+                                    <textarea>
+                                        IT 기획부 주간 정기 영상회의
+                                    </textarea>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="pop-up-right scroll-height">
+                            <table class="data-details">
+                                <caption>회의실</caption>
+                                <colgroup>
+                                    <col >
+                                    
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td>회의실명</td>
+                                    </tr>
+                                </thead>
+                    
+                                <tbody>
+                                    <tr>
+                                        <td>본사 1층 영상회의실</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>본사 1층 영상회의실</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="data-details">
+                                <caption>참석자</caption>
+                                <colgroup>
+                                    <col >
+                                    <col >
+                                    <col >
+                                    
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td>이름</td>
+                                        <td>부서</td>
+                                        <td>직급</td>
+                                    </tr>
+                                </thead>
+                    
+                                <tbody>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>IT 기획부</td>
+                                        <td>차장</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>IT 기획부</td>
+                                        <td>차장</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="data-details">
+                                <caption>회의실 참석자</caption>
+                                <colgroup>
+                                    <col >
+                                    <col >
+                                    <col >
+                                    
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td>이름</td>
+                                        <td>부서</td>
+                                        <td>직급</td>
+                                    </tr>
+                                </thead>
+                    
+                                <tbody>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>IT 기획부</td>
+                                        <td>차장</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>IT 기획부</td>
+                                        <td>차장</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="data-details">
+                                <caption>외부 참석자</caption>
+                                <colgroup>
+                                    <col >
+                                    <col >
+                                    <col >
+                                    
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <td>이름</td>
+                                        <td>부서</td>
+                                        <td>직급</td>
+                                    </tr>
+                                </thead>
+                    
+                                <tbody>
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>IT 기획부</td>
+                                        <td>차장</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>홍길동</td>
+                                        <td>IT 기획부</td>
+                                        <td>차장</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="inline-left">
+                        <button onclick="" class="btn excel regular-min">다운로드</button>
+                    </div>
+                    <div class="inline-right">
+                        <button onclick="" class="btn cancel small">취소</button>
+                        <button onclick="" class="btn secondary small">수정</button>
+                        <button onclick="" class="btn primary small">확인</button>
+                    </div>
+                    <div class="close-control">
+                        <button onclick="" class="btn close small-min">
+                            <i class="icon-elem ">닫기</i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="pop-up small" style="display: none;">
+                    <h5>회의정보</h5>
+                    <div class="pop-up-contents">
+                        <dl>
+                            <dt>회의제목 :</dt>
+                            <dd>정기화상회의</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>시작시간 :</dt>
+                            <dd>15:00 ~ 15:15</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>예약자 :</dt>
+                            <dd>홍길동  IT 기획부 차장</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>참석인원 :</dt>
+                            <dd>8명</dd>
+                        </dl>
+
+                    </div>
+                    <div class="close-control">
+                        <button onclick="" class="btn close small-min">
+                            <i class="icon-elem ">닫기</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
