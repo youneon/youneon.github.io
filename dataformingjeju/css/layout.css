@@ -1,0 +1,138 @@
+@charset 'utf-8';
+
+@font-face {
+	font-family: 'S-CoreDream-4Regular';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+html {
+	font-family: 'S-CoreDream-4Regular', 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+	line-height: 1.2;
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    background: black;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+div, span, article, section, header, footer, aside, p, ul, li, fieldset, legend, label, a, nav, form {
+	box-sizing: border-box;
+}
+ol, ul, li {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+button {
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-desc {
+    position: absolute;
+    top: 4vh;
+}
+
+.main-desc p {
+	display: inline;
+	background: rgb(255, 255, 255);
+	color: rgb(29, 29, 31);
+	line-height: 2em;
+	padding: 4px;
+	
+}
+
+.main-desc.right-top p {
+	color: rgb(255, 255, 255);
+	background: rgb(29, 29, 31);
+}
+
+.btn {
+	background: rgb(255, 255, 255);
+	color: rgb(29, 29, 31);
+	font-family: 'S-CoreDream-4Regular', 'Apple SD Gothic Neo', Roboto, 'Noto Sans KR', NanumGothic, 'Malgun Gothic', sans-serif;
+	font-size: 2rem;
+}
+
+.btn.prev {
+	position: absolute;
+	bottom: 20vh;
+	left: 2vh;
+}
+
+.main-desc.left-top {
+	left: 2vh;
+	width: 16vw;
+}
+
+.main-desc.right-top {
+	right: 2vh;
+	width: 20vw;
+	text-align: right;
+}
+
+.main-desc.center {
+	top: unset;
+	bottom: 20vh;
+	right: 2vh;
+	width: 40vw;
+	text-align: right;
+}
+
+.tracking-count.space {
+	position: absolute;
+	bottom: 26vh;
+	left: 2vw;
+	width: 50vw;
+}
+
+.tracking-count p{
+	display: inline;
+	background: rgb(255, 255, 255);
+	color: rgb(29, 29, 31);
+	line-height: 2em;
+	padding: 4px;
+}
+
+@media (min-width: 400px) {
+	.main-desc.left-top {
+		width: 58vw;
+	}
+}
+
