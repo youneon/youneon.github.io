@@ -1,3 +1,46 @@
 <footer>
   &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.
+
+  <a id="create-kakao-link-btn" href="javascript:;">
+    <img
+      src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+    />
+  </a>
+  <script type="text/javascript">
+    Kakao.Link.createDefaultButton({
+      container: '#create-kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '정혜윤',
+        description: '작업소개',
+        imageUrl:
+          'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://youneon.github.io/',
+          webUrl: 'https://youneon.github.io/',
+        },
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845,
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
+          link: {
+            mobileWebUrl: 'https://youneon.github.io/',
+            webUrl: 'https://youneon.github.io/',
+          },
+        },
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://youneon.github.io/',
+            webUrl: 'https://youneon.github.io/',
+          },
+        },
+      ],
+    })
+  </script>
 </footer>
