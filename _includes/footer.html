@@ -13,7 +13,7 @@
       container: '#create-kakao-link-btn',
       objectType: 'feed',
       content: {
-        title: '정혜윤',
+        title: '#스쿨위드유',
         description: '작업소개',
         imageUrl:
           'https://sen.go.kr/schoolwithyou/img/logo.png',
@@ -41,4 +41,21 @@
     });
      //]]>
   </script>
+
+  <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your share button code -->
+<div class="fb-share-button" 
+data-href="https://youneon.github.io/" 
+data-layout="button_count">
+</div>
+
 </footer>
