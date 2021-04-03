@@ -1,0 +1,295 @@
+@font-face {
+  font-family: "GyeonggiBatang";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+main > #content {
+  position: relative;
+  height: calc(100vh - 100px);
+  min-height: 742px;
+  margin: 0 auto;
+  padding-top: 80px;
+  background: rgb(65, 119, 179);
+  background: linear-gradient(45deg, rgba(65, 119, 179, 1) 0%, rgba(45, 174, 102, 1) 100%);
+  background-size: cover;
+  overflow: hidden;
+}
+
+main > #content::before {
+  content: url("/images/img_main_back.png");
+  position: absolute;
+  bottom: -6%;
+  right: 5%;
+}
+
+main > #content .main_visual {
+  width: 100%;
+  height: 100%;
+}
+
+main > #content .main_visual .left {
+  float: left;
+  box-sizing: border-box;
+  width: 52%;
+  padding-top: 150px;
+}
+
+main > #content .main_visual .left .desc {
+  margin-bottom: 10px;
+}
+
+main > #content .main_visual .left .desc h2 {
+  margin-bottom: 35px;
+  font-family: "GyeonggiBatang";
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #ffffff;
+}
+
+main > #content .main_visual .left .desc .title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 15px;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -0.92px;
+  color: #fff;
+}
+
+main > #content .main_visual .left .desc .title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+main > #content .main_visual .left .desc .text {
+  width: 660px;
+  height: 138px;
+  font-size: 18px;
+  line-height: 1.94;
+  letter-spacing: -0.72px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.tel_list {
+  box-sizing: border-box;
+  width: 660px;
+  /* height: 90px; */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tel_list ul li {
+  float: left;
+  width: 50%;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tel_list ul li:last-child {
+  border-right: none;
+  border-bottom: none;
+}
+
+.tel_list ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.tel_list ul li a > div {
+  display: flex;
+  padding: 15px 28px;
+}
+
+.tel_list ul li a .top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tel_list ul li a .img {
+  margin-right: 15px;
+}
+
+.tel_list ul li a .tel_desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tel_list ul li a .tel_desc .title {
+  margin-bottom: 10px;
+  font-family: "GyeonggiBatang";
+  font-size: 17px;
+  letter-spacing: -0.34px;
+}
+
+.tel_list ul li a .tel_desc .tel {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.tel_list ul li a .tel_desc .tel span {
+  vertical-align: top;
+  /* font-family: "GyeonggiBatang"; */
+  font-weight: 400;
+}
+
+.tel_list ul li a .tel_desc .tel img {
+  vertical-align: middle;
+}
+
+.tel_list ul li a .tel_desc .guide {
+  position: relative;
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.tel_list ul li a .tel_desc .guide::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.tel_list ul li a .bottom {
+  line-height: 1.4;
+}
+
+.tel_list ul li a .bottom p {
+  position: relative;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.tel_list ul li a .bottom p::before {
+  content: "-";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.tel_list ul li:last-child a {
+  border-right: none;
+}
+
+main .main_visual .right {
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  width: 48%;
+  padding-top: 445px;
+}
+
+main .main_visual .right .list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .main_visual .right .list li {
+  width: 200px;
+  height: 190px;
+  margin-right: 20px;
+}
+
+main .main_visual .right .list li:last-child {
+  margin-right: 0;
+}
+
+main .main_visual .right .list li a {
+  display: block;
+  padding: 30px 26px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #ebffff;
+  background-image: url("/images/icon_main_guide.png");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 32px) calc(100% - 30px);
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+main .main_visual .right .list li:nth-child(2) a {
+  background-image: url("/images/icon_main_report.png");
+}
+
+main .main_visual .right .list li:nth-child(3) a {
+  background-image: url("/images/icon_main_report_confirm.png");
+}
+
+main .main_visual .right .list li a dl dt {
+  margin-bottom: 15px;
+  font-family: "GyeonggiBatang";
+  font-size: 21px;
+  letter-spacing: -0.72px;
+  text-align: left;
+  color: #4278b3;
+  transition: all 0.5s;
+}
+
+main .main_visual .right .list li a dl dd {
+  height: 70px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: -0.56px;
+  font-weight: 300;
+  color: #656565;
+  transition: all 0.5s;
+}
+
+main .main_visual .right .list li a p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.56px;
+  color: #4177b3;
+  transition: all 0.5s;
+}
+
+main .main_visual .right .list li a p::after {
+  content: url("/images/icon_circle_right_arrow.png");
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+main .main_visual .right .list li a:hover {
+  background-color: #4177b3;
+  background-image: url("/images/icon_main_guide_on.png");
+  color: #fff;
+}
+
+main .main_visual .right .list li:nth-child(2) a:hover {
+  background-image: url("/images/icon_main_report_on.png");
+}
+
+main .main_visual .right .list li:nth-child(3) a:hover {
+  background-image: url("/images/icon_main_report_confirm_on.png");
+}
+
+main .main_visual .right .list li a:hover dl dt,
+main .main_visual .right .list li a:hover dl dd,
+main .main_visual .right .list li a:hover p {
+  color: #fff;
+  transition: all 0.5s;
+}
+
+main .main_visual .right .list li a:hover p::after {
+  content: url("/images/icon_circle_right_arrow_white.png");
+  transition: all 0.5s;
+}

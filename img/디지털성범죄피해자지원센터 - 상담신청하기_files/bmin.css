@@ -1,0 +1,39 @@
+main {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 36px;
+}
+h2 {
+    font-size: 60px;
+    font-weight: 700;
+}
+.h-decs {
+    width: auto;
+    margin-top: 32px;
+    font-size: 20px;
+    line-height: 36px;
+    white-space: keep-all;
+}
+
+.guide-list {
+    
+}
+
+.guide-content {
+    float: left;
+    width: 580px;
+    background: #fff;
+    margin: 32px 36px 0px 0px;
+    padding: 50px;
+    box-shadow: 0px 15px 20px 0 rgb(0 0 0 / 4%);
+    border-radius: 15px;
+}
+
+.guide-content.top {
+    width: 1200px;
+    margin-left: 0;
+}
+
+.guide-content:last-child {
+    margin-right: 0;
+}
