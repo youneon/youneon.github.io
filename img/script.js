@@ -115,32 +115,6 @@ function boxClick (index) {
   toggleClass('on');
 };
 
-
-$(window).ready(function(){ 
-  $(".sns-list li a").click(function(){
-          shareAct(this);
-      });
-  });
-
-  function shareAct(a){
-  var snsCode = $(a).attr('id');
-  var cUrl = "https://youneon.github.io/";
-
-  switch(snsCode){
-      case"vIconTw":
-          //트위터
-          cUrl = 'https://twitter.com/intent/tweet?text=스쿨위드유:&url='+cUrl;
-      break;
-      case"vIconFb":
-          //페이스북
-          cUrl = 'http://www.facebook.com/sharer/sharer.php?u='+cUrl;
-      break;
-  }
-
-  window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
-
-};
-
 $('.btn-share').click(function(){
   var $href = $(this).attr('href');
   layer_popup($href);
@@ -177,6 +151,11 @@ function layer_popup(el){
   });
 
 };
+
+$(".wrap__theme--1-1-1 .select__option").click(function(){
+  $(this).toggleClass('on');
+  var theParent = $(this).closest('.box__option--pressed');
+});
 
 Kakao.init('4dc76908be5d88021b7292835f4614fa');
        Kakao.Link.createDefaultButton({
