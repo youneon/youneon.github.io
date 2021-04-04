@@ -43,41 +43,16 @@
         <link rel="stylesheet" type="text/css" href="ie.css" />
         <![endif]-->
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script> 
-            function snsShare(snsName, link, title) {
+            $('.share-btn').click(function(){
+                $(this).addClass("clicked");
+            });
 
-                if (title === null) return false;
-
-                var snsPopUp;
-                var _width = '500';
-                var _height = '450';
-                var _left = Math.ceil(( window.screen.width - _width )/2);
-                var _top = Math.ceil(( window.screen.height - _height )/2);
-
-                switch(snsName){
-                    case 'facebook':
-                        snsPopUp = window.open("http://www.facebook.com/sharer/sharer.php?u=" + link, '', 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top);
-                        break;
-
-                    case 'twitter' :
-                        snsPopUp = window.open("http://twitter.com/intent/tweet?url=" + link + "&text=" + title, '', 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top);
-                        break;
-
-                    case 'kakao' :
-                        snsPopUp = window.open("https://story.kakao.com/share?url=" + link, '', 'width='+ _width +', height='+ _height +', left=' + _left + ', top='+ _top);
-                        break;
-
-                    case 'addurl' :
-                        var dummy = document.createElement("textarea");
-                        document.body.appendChild(dummy);
-                        dummy.value = link;
-                        dummy.select();
-                        document.execCommand("copy");
-                        document.body.removeChild(dummy);
-                        oneBtnModal("URL이 클립보드에 복사되었습니다.");
-                        break;
-                }
-            }
+            $('.close').click(function (e) {
+            $('.clicked').removeClass('clicked');
+            e.stopPropagation();
+            });
         </script>
     </head>
     <body class="scrollbar scrollbar-warning guide-board">
@@ -127,9 +102,17 @@
         </main>
         <footer>
 
-            <button class="down-btn" onclick="snsShare();">
-                공유하기
-            </button>
+            <div class="share-btn">
+                <span class="cta">Share</span>
+                <div class="close ion-close-round"></div>
+                <ul class="social">
+
+                  <li>카카오톡</li>
+                  <li>페이스북</li>
+                  <li>트위터</li>
+                </ul>
+                <div class="fake-input">http://dribbble.com/San</div>
+              </div>
             <a id="create-kakao-link-btn" href="javascript:;">
                 <img
                   src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
