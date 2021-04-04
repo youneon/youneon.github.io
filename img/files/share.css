@@ -132,9 +132,6 @@ header {
     padding: 2px 0 0 0;
   }
   
-  .text__footer-policy a {
-    color: #fff;
-  }
 
 
 
@@ -235,11 +232,6 @@ h2 {
 }
 
 @media only screen and (max-width: 640px){
-    
-    h2 {
-        font-size: 2.7rem;
-        font-weight: 700;
-    }
     .dot {
         display: none;
       }
@@ -352,7 +344,6 @@ h2 {
         text-align: center;
         color: #fff;
       }
-
 }
 
 @media only screen and (min-width: 981px) {
@@ -360,7 +351,7 @@ h2 {
         width: 100%;
         max-width: 1260px;
         margin: 0 auto;
-        padding: 30px 30px 140px 30px;
+        padding: 30px 30px 100px 30px;
     }
 
     .guide-content .guide-decs {

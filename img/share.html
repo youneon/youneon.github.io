@@ -79,7 +79,7 @@
       
         <main class="container" id="content">
             <section>
-                <h2 class="title-main">대응가이드</h2>
+                <h2>대응가이드</h2>
                 <p class="h-decs">
                     내게 일어난 일이 성폭력인지 모르겠다면?<br>
                     각종 성폭력에 대응할 수 있는 정보가 담긴 가이드를 제공합니다.
@@ -117,7 +117,50 @@
                     </ul>
                 </article>
             </section>
+            <a href="#layer2" class="btn-share down-btn">공유하기</a>
         </main>
+        <div class="dim-layer">
+            <div class="dimBg"></div>
+            <div id="layer2" class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <!--content //-->
+                        <p class="ctxt mb20">SNS에 공유하기<br>
+                            <ul class="sns-list">
+                                <li>
+                                    <a id="create-kakao-link-btn" href="javascript:;">
+                                        <img class="social-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                                        />
+                                      </a>
+                                </li>
+                                <li>
+                                    <a id="vIconFb" onclick="return false;">
+                                        <img class="social-btn" src="./files/fb-icon.png"
+                                        />
+                                      </a>
+                                    <!--
+                                    <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0" nonce="URngwhJJ"></script>
+                                    <div class="fb-share-button"  data-href="https://youneon.github.io/"></div>
+                                        -->
+                                </li>
+                                <li>
+                                    <a id="vIconTw" onclick="return false;">
+                                        <img class="social-btn" src="./files/tw-icon.png"
+                                        />
+                                      </a>
+                                </li>
+                            </ul>
+                        </p>
+
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose" onclick="return false;">닫기</a>
+                        </div>
+                        <!--// content-->
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="wrap__footer">
               <div class="text__footer">
@@ -135,6 +178,99 @@
               </div>
             </div>
           </footer>
- 
+        <script type="text/javascript">
+            //<![CDATA[
+             Kakao.init('10a683c6cbb8d50f9cea81b577ad12e4');
+             Kakao.Link.createDefaultButton({
+               container: '#create-kakao-link-btn',
+               objectType: 'feed',
+               content: {
+                 title: '#스쿨위드유',
+                 description: '작업소개',
+                 imageUrl:
+                   'https://sen.go.kr/schoolwithyou/img/logo.png',
+                 link: {
+                   mobileWebUrl: 'https://youneon.github.io/',
+                   webUrl: 'https://youneon.github.io/',
+                 },
+               },
+               buttons: [
+                 {
+                   title: '웹으로 보기',
+                   link: {
+                     mobileWebUrl: 'https://youneon.github.io/',
+                     webUrl: 'https://youneon.github.io/',
+                   },
+                 },
+               ],
+             });
+
+             $('.btn-share').click(function(){
+                    var $href = $(this).attr('href');
+                    layer_popup($href);
+                });
+                function layer_popup(el){
+
+                    var $el = $(el);		//레이어의 id를 $el 변수에 저장
+                    var isDim = $el.prev().hasClass('dimBg');	//dimmed 레이어를 감지하기 위한 boolean 변수
+
+                    isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+
+                    var $elWidth = ~~($el.outerWidth()),
+                        $elHeight = ~~($el.outerHeight()),
+                        docWidth = $(document).width(),
+                        docHeight = $(document).height();
+
+                    // 화면의 중앙에 레이어를 띄운다.
+                    if ($elHeight < docHeight || $elWidth < docWidth) {
+                        $el.css({
+                            marginTop: -$elWidth/2,
+                            marginLeft: -$elWidth/2
+                        })
+                    } else {
+                        $el.css({top: 0, left: 0});
+                    }
+
+                    $el.find('a.btn-layerClose').click(function(){
+                        isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+                        return false;
+                    });
+
+                    $('.layer .dimBg').click(function(){
+                        $('.dim-layer').fadeOut();
+                        return false;
+                    });
+
+                };
+              //]]>
+           </script>
+           
+        <script> 
+            $(window).ready(function(){ 
+  
+                $(".sns-list li a").click(function(){
+                        shareAct(this);
+                    });
+                });
+
+                function shareAct(a){
+                var snsCode = $(a).attr('id');
+                var cUrl = "https://youneon.github.io/";
+
+                switch(snsCode){
+                    case"vIconTw":
+                        //트위터
+                        cUrl = 'https://twitter.com/intent/tweet?text=스쿨위드유:&url='+cUrl;
+                    break;
+                    case"vIconFb":
+                        //페이스북
+                        cUrl = 'http://www.facebook.com/sharer/sharer.php?u='+cUrl;
+                    break;
+                }
+
+                window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
+
+                }
+        </script>
     </body>
 </html>
