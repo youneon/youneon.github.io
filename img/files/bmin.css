@@ -167,7 +167,8 @@ h2 {
   }
   .sns-list li {
     float: left;
-    width: auto;
+    width: 64px;
+    height: auto;
   }
 
   .kakao-btn {
