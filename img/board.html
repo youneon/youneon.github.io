@@ -47,6 +47,8 @@
             
     </head>
     <body class="scrollbar scrollbar-warning guide-board">
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0" nonce="URngwhJJ"></script>
         <header style="position: static; width: 100%; height: 106px;">
             <nav></nav>
         </header>
@@ -108,17 +110,7 @@
                                           </a>
                                     </li>
                                     <li>
-                                        <div id="fb-root"></div>
-                                        <!-- Load Facebook SDK for JavaScript -->
-                                        <script>(function(d, s, id) {
-                                            var js, fjs = d.getElementsByTagName(s)[0];
-                                            if (d.getElementById(id)) return;
-                                            js = d.createElement(s); js.id = id;
-                                            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-                                            fjs.parentNode.insertBefore(js, fjs);
-                                            }(document, 'script', 'facebook-jssdk'));</script>
-                                            <!-- Your share button code -->
-                                        <div class="fb-share-button"  data-href="https://youneon.github.io/"></div>
+                                        <div class="fb-share-button" data-href="https://youneon.github.io/" class="fb-xfbml-parse-ignore">공유하기</a></div>
                                     </li>
                                     <li>
 
