@@ -91,81 +91,125 @@
             </section>
         </main>
         <footer>
+            <script type="text/javascript">
+                //<![CDATA[
+                 Kakao.init('10a683c6cbb8d50f9cea81b577ad12e4');
+                 Kakao.Link.createDefaultButton({
+                   container: '#create-kakao-link-btn',
+                   objectType: 'feed',
+                   content: {
+                     title: '#스쿨위드유',
+                     description: '작업소개',
+                     imageUrl:
+                       'https://sen.go.kr/schoolwithyou/img/logo.png',
+                     link: {
+                       mobileWebUrl: 'https://youneon.github.io/',
+                       webUrl: 'https://youneon.github.io/',
+                     },
+                   },
+                   buttons: [
+                     {
+                       title: '웹으로 보기',
+                       link: {
+                         mobileWebUrl: 'https://youneon.github.io/',
+                         webUrl: 'https://youneon.github.io/',
+                       },
+                     },
+                     {
+                       title: '앱으로 보기',
+                       link: {
+                         mobileWebUrl: 'https://youneon.github.io/',
+                         webUrl: 'https://youneon.github.io/',
+                       },
+                     },
+                   ],
+                 });
+                  //]]>
+               </script>
+             
+             
+           
+             
+            <a href="#layer2" class="down-btn">공유하기</a>
+            <div class="dim-layer">
+                <div class="dimBg"></div>
+                <div id="layer2" class="pop-layer">
+                    <div class="pop-container">
+                        <div class="pop-conts">
+                            <!--content //-->
+                            <p class="ctxt mb20">Thank you.<br>
+                                <ul>
+                                    <li>
+                                        <a id="create-kakao-link-btn" href="javascript:;">
+                                            <img
+                                              src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                                            />
+                                          </a>
+                                    </li>
+                                    <li>
+                                        <div id="fb-root"></div>
+                                          <!-- Load Facebook SDK for JavaScript -->
+                                        <script>(function(d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));</script>
+                                            <!-- Your share button code -->
+                                        <div class="fb-share-button"  data-href="https://youneon.github.io/"  data-layout="button_count"></div>
+                                    </li>
+                                    <li></li>
+                                </ul>
+                            </p>
 
-            <div class="share-btn">
-                <span class="cta">Share</span>
-                <div class="close ion-close-round"></div>
-                <ul class="social">
-                  <li><a id="create-kakao-link-btn" href="javascript:;">카카오톡</a></li>
-                  <li>페이스북</li>
-                  <li>트위터</li>
-                </ul>
-                <div class="fake-input">http://dribbble.com/San</div>
-              </div>
-            <a id="create-kakao-link-btn" href="javascript:;">
-                <img
-                  src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-                />
-              </a>
-              <script type="text/javascript">
-               //<![CDATA[
-                Kakao.init('10a683c6cbb8d50f9cea81b577ad12e4');
-                Kakao.Link.createDefaultButton({
-                  container: '#create-kakao-link-btn',
-                  objectType: 'feed',
-                  content: {
-                    title: '#스쿨위드유',
-                    description: '작업소개',
-                    imageUrl:
-                      'https://sen.go.kr/schoolwithyou/img/logo.png',
-                    link: {
-                      mobileWebUrl: 'https://youneon.github.io/',
-                      webUrl: 'https://youneon.github.io/',
-                    },
-                  },
-                  buttons: [
-                    {
-                      title: '웹으로 보기',
-                      link: {
-                        mobileWebUrl: 'https://youneon.github.io/',
-                        webUrl: 'https://youneon.github.io/',
-                      },
-                    },
-                    {
-                      title: '앱으로 보기',
-                      link: {
-                        mobileWebUrl: 'https://youneon.github.io/',
-                        webUrl: 'https://youneon.github.io/',
-                      },
-                    },
-                  ],
-                });
-                 //]]>
-              </script>
-            
-              <!-- Load Facebook SDK for JavaScript -->
-            <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-            fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));</script>
-            <!-- Your share button code -->
-            <div class="fb-share-button" 
-            data-href="https://youneon.github.io/" 
-            data-layout="button_count">
+                            <div class="btn-r">
+                                <a href="#" class="btn-layerClose">Close</a>
+                            </div>
+                            <!--// content-->
+                        </div>
+                    </div>
+                </div>
             </div>
+            
             <script> 
-                $('.share-btn').click(function(){
-                    $(this).addClass("clicked");
-                });
-    
-                $('.close').click(function (e) {
-                $('.clicked').removeClass('clicked');
-                e.stopPropagation();
-                });
+                $('.btn-example').click(function(){
+        var $href = $(this).attr('href');
+        layer_popup($href);
+    });
+    function layer_popup(el){
+
+        var $el = $(el);		//레이어의 id를 $el 변수에 저장
+        var isDim = $el.prev().hasClass('dimBg');	//dimmed 레이어를 감지하기 위한 boolean 변수
+
+        isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+
+        var $elWidth = ~~($el.outerWidth()),
+            $elHeight = ~~($el.outerHeight()),
+            docWidth = $(document).width(),
+            docHeight = $(document).height();
+
+        // 화면의 중앙에 레이어를 띄운다.
+        if ($elHeight < docHeight || $elWidth < docWidth) {
+            $el.css({
+                marginTop: -$elHeight /2,
+                marginLeft: -$elWidth/2
+            })
+        } else {
+            $el.css({top: 0, left: 0});
+        }
+
+        $el.find('a.btn-layerClose').click(function(){
+            isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+            return false;
+        });
+
+        $('.layer .dimBg').click(function(){
+            $('.dim-layer').fadeOut();
+            return false;
+        });
+
+    }
             </script>
         </footer>
     </body>
