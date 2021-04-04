@@ -145,7 +145,6 @@ h2 {
   
   .pop-layer .btn-r {
     width: 100%;
-    margin: 10px 0 0;
     padding-top: 10px;
     border-top: 1px solid #DDD;
     text-align: right;
@@ -164,7 +163,7 @@ h2 {
     z-index: 10;
   }
   .sns-list {
-    height: 76px;
+    height: 64px;
     margin: 0 auto;
     margin-top: 8px;
   }
@@ -213,7 +212,7 @@ h2 {
     top: 10%;
     right: 7%;
     display: inline-block;
-    height: 25px;
+    height: 27px;
     padding: 0 14px 0;
     border: 1px solid #304a8a;
     background-color: #3f5a9d;
