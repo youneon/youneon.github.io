@@ -192,11 +192,13 @@
                             marginLeft: -$elWidth/2
                         })
                     } else {
+                        $('body').css({overflow:'hidden'});
                         $el.css({top: 0, left: 0});
                     }
 
                     $el.find('a.btn-layerClose').click(function(){
                         isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+                        $('body').css({overflow:'visible'});
                         return false;
                     });
 
