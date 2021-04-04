@@ -102,15 +102,21 @@
                         <p class="ctxt mb20">SNS에 공유하기<br>
                             <ul class="sns-list">
                                 <li>
-                                    <a id="create-kakao-link-btn" href="javascript:;">
+                                    <a id="create-kakao-link-btn" id="vIconKs" onclick="return false;">
                                         <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
                                         />
                                       </a>
                                 </li>
                                 <li>
+                                    <a id="vIconFb" onclick="return false;">
+                                        <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                                        />
+                                      </a>
+                                    <!--
                                     <div id="fb-root"></div>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0" nonce="URngwhJJ"></script>
                                     <div class="fb-share-button"  data-href="https://youneon.github.io/"></div>
+                                        -->
                                 </li>
                                 <li>
 
@@ -199,7 +205,40 @@
                         return false;
                     });
 
-                }
+                };
+
+                $(window).ready(function(){ 
+  
+                    $(".sns-list li a").click(function(){
+                            shareAct(this);
+                        });
+                    });
+
+                    function shareAct(a){
+                    var snsCode = $(a).attr('id');
+                    var cUrl = "https://youneon.github.io/";
+
+                    switch(snsCode){
+                        case"vIconTw":
+                            //트위터
+                            cUrl = 'https://twitter.com/intent/tweet?text=페이지제목:&url='+cUrl;
+                        break;
+                        case"vIconFb":
+                            //페이스북
+                            cUrl = 'http://www.facebook.com/sharer/sharer.php?u='+cUrl;
+                        break;
+
+                        case"vIconKs":
+                            //카카오스토리
+                            cUrl = 'https://story.kakao.com/share?url='+cUrl;
+                        break;
+
+                    }
+
+                    window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
+
+                    }
+
         </script>
     </body>
 </html>
