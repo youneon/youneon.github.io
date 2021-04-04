@@ -56,7 +56,7 @@
                         <p class="ctxt mb20">SNS에 공유하기<br>
                             <ul class="sns-list">
                                 <li>
-                                    <a id="create-kakao-link-btn" href="javascript();" onclick="return false;">
+                                    <a id="create-kakao-link-btn" href="javascript:;" onclick="return false;">
                                         <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
                                         />
                                       </a>
@@ -168,11 +168,8 @@
                  },
                ],
              });
-              //]]>
-           </script>
-           
-        <script> 
-            $('.btn-share').click(function(){
+
+             $('.btn-share').click(function(){
                     var $href = $(this).attr('href');
                     layer_popup($href);
                 });
@@ -236,6 +233,11 @@
 
                     }
 
+              //]]>
+           </script>
+           
+        <script> 
+           
         </script>
     </body>
 </html>
