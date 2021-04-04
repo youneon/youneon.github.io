@@ -162,17 +162,22 @@ h2 {
     z-index: 10;
   }
   .sns-list {
-    height: 52px;
+    height: 76px;
+    margin: 0 auto;
     margin-top: 8px;
   }
   .sns-list li {
     float: left;
-    width: 64px;
+    width: 72px;
     height: auto;
+    margin-right: 7px;
+  }
+  .sns-list li:last-child {
+    margin-right: 0px;
   }
 
   .kakao-btn {
-    width: 70%;
+    width: 100%;
   }
   
   .dim-layer {
