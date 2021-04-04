@@ -92,85 +92,9 @@
                     </ul>
                 </article>
             </section>
-        </main>
-        <footer>
             <a href="#layer2" class="btn-share down-btn">공유하기</a>
-            
-            <script type="text/javascript">
-                //<![CDATA[
-                 Kakao.init('10a683c6cbb8d50f9cea81b577ad12e4');
-                 Kakao.Link.createDefaultButton({
-                   container: '#create-kakao-link-btn',
-                   objectType: 'feed',
-                   content: {
-                     title: '#스쿨위드유',
-                     description: '작업소개',
-                     imageUrl:
-                       'https://sen.go.kr/schoolwithyou/img/logo.png',
-                     link: {
-                       mobileWebUrl: 'https://youneon.github.io/',
-                       webUrl: 'https://youneon.github.io/',
-                     },
-                   },
-                   buttons: [
-                     {
-                       title: '웹으로 보기',
-                       link: {
-                         mobileWebUrl: 'https://youneon.github.io/',
-                         webUrl: 'https://youneon.github.io/',
-                       },
-                     },
-                     {
-                       title: '앱으로 보기',
-                       link: {
-                         mobileWebUrl: 'https://youneon.github.io/',
-                         webUrl: 'https://youneon.github.io/',
-                       },
-                     },
-                   ],
-                 });
-                  //]]>
-               </script>
-                <script> 
-                    $('.btn-share').click(function(){
-                            var $href = $(this).attr('href');
-                            layer_popup($href);
-                        });
-                        function layer_popup(el){
-    
-                            var $el = $(el);		//레이어의 id를 $el 변수에 저장
-                            var isDim = $el.prev().hasClass('dimBg');	//dimmed 레이어를 감지하기 위한 boolean 변수
-    
-                            isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
-    
-                            var $elWidth = ~~($el.outerWidth()),
-                                $elHeight = ~~($el.outerHeight()),
-                                docWidth = $(document).width(),
-                                docHeight = $(document).height();
-    
-                            // 화면의 중앙에 레이어를 띄운다.
-                            if ($elHeight < docHeight || $elWidth < docWidth) {
-                                $el.css({
-                                    marginTop: -$elHeight /2,
-                                    marginLeft: -$elWidth/2
-                                })
-                            } else {
-                                $el.css({top: 0, left: 0});
-                            }
-    
-                            $el.find('a.btn-layerClose').click(function(){
-                                isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
-                                return false;
-                            });
-    
-                            $('.layer .dimBg').click(function(){
-                                $('.dim-layer').fadeOut();
-                                return false;
-                            });
-    
-                        }
-                </script>
-        </footer>
+        </main>
+        <footer></footer>
         <div class="dim-layer">
             <div class="dimBg"></div>
             <div id="layer2" class="pop-layer">
@@ -202,5 +126,80 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            //<![CDATA[
+             Kakao.init('10a683c6cbb8d50f9cea81b577ad12e4');
+             Kakao.Link.createDefaultButton({
+               container: '#create-kakao-link-btn',
+               objectType: 'feed',
+               content: {
+                 title: '#스쿨위드유',
+                 description: '작업소개',
+                 imageUrl:
+                   'https://sen.go.kr/schoolwithyou/img/logo.png',
+                 link: {
+                   mobileWebUrl: 'https://youneon.github.io/',
+                   webUrl: 'https://youneon.github.io/',
+                 },
+               },
+               buttons: [
+                 {
+                   title: '웹으로 보기',
+                   link: {
+                     mobileWebUrl: 'https://youneon.github.io/',
+                     webUrl: 'https://youneon.github.io/',
+                   },
+                 },
+                 {
+                   title: '앱으로 보기',
+                   link: {
+                     mobileWebUrl: 'https://youneon.github.io/',
+                     webUrl: 'https://youneon.github.io/',
+                   },
+                 },
+               ],
+             });
+              //]]>
+           </script>
+           
+        <script> 
+            $('.btn-share').click(function(){
+                    var $href = $(this).attr('href');
+                    layer_popup($href);
+                });
+                function layer_popup(el){
+
+                    var $el = $(el);		//레이어의 id를 $el 변수에 저장
+                    var isDim = $el.prev().hasClass('dimBg');	//dimmed 레이어를 감지하기 위한 boolean 변수
+
+                    isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+
+                    var $elWidth = ~~($el.outerWidth()),
+                        $elHeight = ~~($el.outerHeight()),
+                        docWidth = $(document).width(),
+                        docHeight = $(document).height();
+
+                    // 화면의 중앙에 레이어를 띄운다.
+                    if ($elHeight < docHeight || $elWidth < docWidth) {
+                        $el.css({
+                            marginTop: -$elHeight /2,
+                            marginLeft: -$elWidth/2
+                        })
+                    } else {
+                        $el.css({top: 0, left: 0});
+                    }
+
+                    $el.find('a.btn-layerClose').click(function(){
+                        isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+                        return false;
+                    });
+
+                    $('.layer .dimBg').click(function(){
+                        $('.dim-layer').fadeOut();
+                        return false;
+                    });
+
+                }
+        </script>
     </body>
 </html>
