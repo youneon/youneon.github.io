@@ -102,14 +102,14 @@
                         <p class="ctxt mb20">SNS에 공유하기<br>
                             <ul class="sns-list">
                                 <li>
-                                    <a id="create-kakao-link-btn" id="vIconKs" onclick="return false;">
+                                    <a id="create-kakao-link-btn" href="javascript();" onclick="return false;">
                                         <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
                                         />
                                       </a>
                                 </li>
                                 <li>
                                     <a id="vIconFb" onclick="return false;">
-                                        <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                                        <img class="kakao-btn" src="./files/fb-icon.png"
                                         />
                                       </a>
                                     <!--
@@ -119,7 +119,10 @@
                                         -->
                                 </li>
                                 <li>
-
+                                    <a id="vIconTw" onclick="return false;">
+                                        <img class="kakao-btn" src="./files/tw-icon.png"
+                                        />
+                                      </a>
                                 </li>
                             </ul>
                         </p>
@@ -221,18 +224,12 @@
                     switch(snsCode){
                         case"vIconTw":
                             //트위터
-                            cUrl = 'https://twitter.com/intent/tweet?text=페이지제목:&url='+cUrl;
+                            cUrl = 'https://twitter.com/intent/tweet?text=스쿨위드유:&url='+cUrl;
                         break;
                         case"vIconFb":
                             //페이스북
                             cUrl = 'http://www.facebook.com/sharer/sharer.php?u='+cUrl;
                         break;
-
-                        case"vIconKs":
-                            //카카오스토리
-                            cUrl = 'https://story.kakao.com/share?url='+cUrl;
-                        break;
-
                     }
 
                     window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
