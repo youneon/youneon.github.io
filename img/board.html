@@ -46,7 +46,49 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             
     </head>
-    <body class="scrollbar scrollbar-warning guide-board">
+    <body class="guide-board">
+        <div class="dim-layer">
+            <div class="dimBg"></div>
+            <div id="layer2" class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <!--content //-->
+                        <p class="ctxt mb20">SNS에 공유하기<br>
+                            <ul class="sns-list">
+                                <li>
+                                    <a id="create-kakao-link-btn" href="javascript();" onclick="return false;">
+                                        <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+                                        />
+                                      </a>
+                                </li>
+                                <li>
+                                    <a id="vIconFb" onclick="return false;">
+                                        <img class="kakao-btn" src="./files/fb-icon.png"
+                                        />
+                                      </a>
+                                    <!--
+                                    <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0" nonce="URngwhJJ"></script>
+                                    <div class="fb-share-button"  data-href="https://youneon.github.io/"></div>
+                                        -->
+                                </li>
+                                <li>
+                                    <a id="vIconTw" onclick="return false;">
+                                        <img class="kakao-btn" src="./files/tw-icon.png"
+                                        />
+                                      </a>
+                                </li>
+                            </ul>
+                        </p>
+
+                        <div class="btn-r">
+                            <a href="#" class="btn-layerClose">닫기</a>
+                        </div>
+                        <!--// content-->
+                    </div>
+                </div>
+            </div>
+        </div>
         <header style="position: static; width: 100%; height: 106px;">
             <nav></nav>
         </header>
@@ -93,48 +135,6 @@
             <a href="#layer2" class="btn-share down-btn">공유하기</a>
         </main>
         <footer></footer>
-        <div class="dim-layer">
-            <div class="dimBg"></div>
-            <div id="layer2" class="pop-layer">
-                <div class="pop-container">
-                    <div class="pop-conts">
-                        <!--content //-->
-                        <p class="ctxt mb20">SNS에 공유하기<br>
-                            <ul class="sns-list">
-                                <li>
-                                    <a id="create-kakao-link-btn" href="javascript();" onclick="return false;">
-                                        <img class="kakao-btn" src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-                                        />
-                                      </a>
-                                </li>
-                                <li>
-                                    <a id="vIconFb" onclick="return false;">
-                                        <img class="kakao-btn" src="./files/fb-icon.png"
-                                        />
-                                      </a>
-                                    <!--
-                                    <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v10.0" nonce="URngwhJJ"></script>
-                                    <div class="fb-share-button"  data-href="https://youneon.github.io/"></div>
-                                        -->
-                                </li>
-                                <li>
-                                    <a id="vIconTw" onclick="return false;">
-                                        <img class="kakao-btn" src="./files/tw-icon.png"
-                                        />
-                                      </a>
-                                </li>
-                            </ul>
-                        </p>
-
-                        <div class="btn-r">
-                            <a href="#" class="btn-layerClose">닫기</a>
-                        </div>
-                        <!--// content-->
-                    </div>
-                </div>
-            </div>
-        </div>
         <script type="text/javascript">
             //<![CDATA[
              Kakao.init('10a683c6cbb8d50f9cea81b577ad12e4');
