@@ -44,16 +44,6 @@
         <![endif]-->
         <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script> 
-            $('.share-btn').click(function(){
-                $(this).addClass("clicked");
-            });
-
-            $('.close').click(function (e) {
-            $('.clicked').removeClass('clicked');
-            e.stopPropagation();
-            });
-        </script>
     </head>
     <body class="scrollbar scrollbar-warning guide-board">
         <header style="position: static; width: 100%; height: 106px;">
@@ -106,8 +96,7 @@
                 <span class="cta">Share</span>
                 <div class="close ion-close-round"></div>
                 <ul class="social">
-
-                  <li>카카오톡</li>
+                  <li><a id="create-kakao-link-btn" href="javascript:;">카카오톡</a></li>
                   <li>페이스북</li>
                   <li>트위터</li>
                 </ul>
@@ -168,7 +157,16 @@
             data-href="https://youneon.github.io/" 
             data-layout="button_count">
             </div>
-
+            <script> 
+                $('.share-btn').click(function(){
+                    $(this).addClass("clicked");
+                });
+    
+                $('.close').click(function (e) {
+                $('.clicked').removeClass('clicked');
+                e.stopPropagation();
+                });
+            </script>
         </footer>
     </body>
 </html>
