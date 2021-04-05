@@ -211,31 +211,6 @@
             container: '#create-kakao-link-btn',
             requestUrl: 'https://sen.go.kr/schoolwithyou/',
         })
-
-        $(window).ready(function(){ 
-              $(".sns-list li a").click(function(){
-                      shareAct(this);
-                  });
-              });
-
-              function shareAct(a){
-              var snsCode = $(a).attr('id');
-              var cUrl = "https://sen.go.kr/schoolwithyou/";
-
-              switch(snsCode){
-                  case"vIconTw":
-                      //트위터
-                      cUrl = 'https://twitter.com/intent/tweet?text=스쿨위드유:&url='+cUrl;
-                  break;
-                  case"vIconFb":
-                      //페이스북
-                      cUrl = 'http://www.facebook.com/sharer/sharer.php?u='+cUrl;
-                  break;
-              }
-
-              window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
-
-            };
         //]]>
      </script>
      <script src="script.js"></script>

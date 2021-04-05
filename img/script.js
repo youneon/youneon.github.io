@@ -101,20 +101,38 @@ details.forEach((targetDetail) => {
   });
 });
 
+// content
+$(".wrap__theme--1-1-1 button").click(function(){
+  $(this).toggleClass('on');
+  var theParent = $(this).closest('.box__option--pressed');
+});
 
-
-var targets = document.getElementsByClassName('box__option--pressed');
-
-function boxClick (index) {
-
-  var $item = $('.box__option--pressed').on('click', function() {
-    var idx = $(this).index();
-    console.log(idx);
+// sns share
+$(window).ready(function(){ 
+  $(".sns-list li a").click(function(){
+          shareAct(this);
+      });
   });
-  //for(var i = 0; i < targets.length; ++i) targets[i].classList.toggle('on');
-  toggleClass('on');
+
+  function shareAct(a){
+  var snsCode = $(a).attr('id');
+  var cUrl = "https://sen.go.kr/schoolwithyou/";
+
+  switch(snsCode){
+      case"vIconTw":
+          //트위터
+          cUrl = 'https://twitter.com/intent/tweet?text=스쿨위드유:&url='+cUrl;
+      break;
+      case"vIconFb":
+          //페이스북
+          cUrl = 'http://www.facebook.com/sharer/sharer.php?u='+cUrl;
+      break;
+  }
+
+  window.open(cUrl,'','width=600,height=300,top=100,left=100,scrollbars=yes');
 };
 
+// dim layer
 $('.btn-share').click(function(){
   var $href = $(this).attr('href');
   layer_popup($href);
@@ -152,11 +170,7 @@ function layer_popup(el){
 
 };
 
-$(".wrap__theme--1-1-1 .select__option").click(function(){
-  $(this).toggleClass('on');
-  var theParent = $(this).closest('.box__option--pressed');
-});
-
+// kakao
 Kakao.init('4dc76908be5d88021b7292835f4614fa');
        Kakao.Link.createDefaultButton({
          container: '#create-kakao-link-btn',
