@@ -142,6 +142,7 @@ $('.btn-share').click(function(){
   var $href = $(this).attr('href');
   layer_popup($href);
 });
+
 function layer_popup(el){
 
   var $el = $(el);
