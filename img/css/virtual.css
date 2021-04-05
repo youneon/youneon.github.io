@@ -719,7 +719,7 @@ hr.divider--0 {
   border: 2px solid #d3da27;
   background-color: #eaea86;
 }
-.box__option--pressed .mint.on {
+.box__option--pressed.mint.on {
   border: 2px solid #70cb8b;
   background-color: #b5eac3;
 }
@@ -1024,7 +1024,7 @@ ul::marker {
   margin: 0 10px 10px 10px;
 }
 /* 눌렸을 때 */
-.box__option--pressed--1-3-1 {
+.box__option--pressed.pink.on {
   border: 2px solid #c885a4;
   background-color: white;
 }
@@ -1322,14 +1322,14 @@ details[open] p {
 .tile--purple {
   background-color: rgba(162, 148, 255, 0.2);
 }
-.tile--select--purple {
+.tile--select.purple.on {
   background-color: #fff;
   border: 2px solid #a294ff;
 }
 .tile--mint {
   background-color: rgba(35, 198, 176, 0.15);
 }
-.tile--select--mint {
+.tile--select.mint.on {
   background-color: #fff;
   border: 2px solid #00a395;
 }

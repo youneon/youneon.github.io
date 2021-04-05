@@ -107,6 +107,11 @@ $(".wrap__theme--1-1-1 button").click(function(){
   var theParent = $(this).closest('.box__option--pressed');
 });
 
+$(".container__main button").click(function(){
+  $(this).toggleClass('on');
+  var theParent = $(this).closest('.tile--select');
+});
+
 // sns share
 $(window).ready(function(){ 
   $(".sns-list li a").click(function(){
