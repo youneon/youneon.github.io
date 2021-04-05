@@ -155,7 +155,7 @@ h2 {
 
 .guide-list {
     margin-top: 16px;
-    height: 900px;
+    height: 924px;
 }
 
 .guide-content {
@@ -210,7 +210,7 @@ h2 {
    width: 30%;
 }
 .guide-content.top .down-btn {
-    margin-top: 174px;
+    margin-top: 256px;
 }
 .guide-content .down-btn {
     display: block;
