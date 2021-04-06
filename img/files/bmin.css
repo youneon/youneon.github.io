@@ -257,6 +257,10 @@ h2 {
   box-shadow: 2px 2px 4px rgba(185, 194, 248, 0.56);
 }
 
+a.top_btn:visited {
+  color: #ffffff;
+}
+
 @media only screen and (max-width: 640px){
   
   h2 {
