@@ -290,14 +290,13 @@ a.top_btn:visited {
   }
   .guide-content.top .guide-decs {
       width: 100%;
+      padding: 10px 0px 5px 0px;
   }
-  .guide-content.top img {
-      width: 70%;
+  .guide-content.top .guide-pic {
+      display: block;
+      width: 100%;
   }
-  .guide-content p {
-      float: none;
-      clear: both;
-  }
+
   .add-on {
     margin: 16px 0;
   }
