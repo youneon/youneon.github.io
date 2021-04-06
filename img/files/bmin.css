@@ -298,6 +298,9 @@ a.top_btn:visited {
       float: none;
       clear: both;
   }
+  .add-on {
+    margin: 16px 0;
+  }
   .top_btn {
     bottom: 4vh;
     right: 8vw;
