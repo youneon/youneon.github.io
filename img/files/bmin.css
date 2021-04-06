@@ -173,9 +173,9 @@ h2 {
 
 .guide-content {
   display: inline-block;
-  width: calc(100% / 2 - 22px);
+  width: calc(100% / 2 - 18px);
   background: #fff;
-  margin-top:36px;
+  margin-top:36px 30px 0 0;
   padding: 50px;
   box-shadow: 0px 15px 20px 0 rgb(0 0 0 / 4%);
   border-radius: 15px;
@@ -188,7 +188,7 @@ h2 {
 .guide-content.top {
   display: block;
   width: 100%;
-  margin-left: 0;
+  margin: 0;
 }
 .guide-content .guide-decs {
   width: 100%;
