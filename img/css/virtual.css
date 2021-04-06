@@ -2605,11 +2605,11 @@ a.btn-layerClose:hover {
   right: 120px;
   width: 64px;
   height: 64px;
-  padding-top: 22px;
+  padding-top: 20px;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: #ffffff !important;
   background: #999999;
   border-radius: 32px;
   box-shadow: 2px 2px 4px rgba(185, 194, 248, 0.56);
