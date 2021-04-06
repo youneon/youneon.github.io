@@ -243,6 +243,8 @@ h2 {
 }
 .top_btn {
   position: fixed;
+  bottom: 64px;
+  right: 36px;
   width: 64px;
   height: 64px;
   background: gray;
