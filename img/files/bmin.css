@@ -298,6 +298,10 @@ a.top_btn:visited {
       float: none;
       clear: both;
   }
+  .top_btn {
+    bottom: 4vh;
+    right: 8vw;
+  }
 }
 
 @media only screen and (max-width: 414px){ 

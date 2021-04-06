@@ -2393,6 +2393,10 @@ details[open] p {
     width: 150px;
     height: auto;
   }
+  .top_btn {
+    bottom: 4vh;
+    right: 8vw;
+  }
 }
 
 .li--1-1-2.text {
@@ -2609,7 +2613,6 @@ a.btn-layerClose:hover {
   border-radius: 32px;
   box-shadow: 2px 2px 4px rgba(185, 194, 248, 0.56);
 }
-
 a.top_btn:visited {
   color: #ffffff;
 }
