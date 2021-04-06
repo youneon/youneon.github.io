@@ -232,9 +232,6 @@ h2 {
   margin-top: 24px;
 }
 
-.guide-content.top .down-btn {
-
-}
 .guide-content .down-btn {
   display: block;
   background: #759EFF;
@@ -244,7 +241,13 @@ h2 {
   font-weight: 700;
   color: #fff;
 }
-
+.top_btn {
+  position: fixed;
+  width: 64px;
+  height: 64px;
+  background: gray;
+  border-radius: 32px;
+}
 
 @media only screen and (max-width: 640px){
   
