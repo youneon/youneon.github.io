@@ -2594,3 +2594,22 @@ a.btn-layerClose:hover {
   background-color: #1f326a;
   color: #fff;
 }
+.top_btn {
+  position: fixed;
+  bottom: 108px;
+  right: 320px;
+  width: 64px;
+  height: 64px;
+  padding-top: 22px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #999999;
+  border-radius: 32px;
+  box-shadow: 2px 2px 4px rgba(185, 194, 248, 0.56);
+}
+
+a.top_btn:visited {
+  color: #ffffff;
+}
