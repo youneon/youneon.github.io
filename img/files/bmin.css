@@ -158,6 +158,10 @@ h2 {
   line-height: 2rem;
   word-break: keep-all;
 }
+.add-on {
+  display: inline-block;
+  width: auto;
+}
 
 .guide-list {
   margin-top: 16px;
