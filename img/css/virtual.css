@@ -1820,6 +1820,7 @@ details[open] p {
     font-size: 9px;
     line-height: 14px;
     padding: 0;
+    border-bottom: 0;
   }
 
   /* 메뉴 */

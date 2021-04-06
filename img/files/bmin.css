@@ -390,6 +390,7 @@ a.top_btn:visited {
       padding: 0;
       text-align: center;
       color: #fff;
+      border-bottom: 0;
     }
 
 }
