@@ -161,6 +161,7 @@ h2 {
 .add-on {
   display: inline-block;
   width: auto;
+  height: auto;
 }
 
 .guide-list {
