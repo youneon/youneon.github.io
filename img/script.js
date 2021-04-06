@@ -177,27 +177,27 @@ function layer_popup(el){
 };
 
 // kakao
-Kakao.init('4dc76908be5d88021b7292835f4614fa');
-       Kakao.Link.createDefaultButton({
-         container: '#create-kakao-link-btn',
-         objectType: 'feed',
-         content: {
-           title: '#스쿨위드유',
-           description: '서울특별시교육청 학교 성폭력 온라인 신고센터 #스쿨위드유',
-           imageUrl:
-             'https://sen.go.kr/schoolwithyou/img/logo.png',
-           link: {
-             mobileWebUrl: 'https://sen.go.kr/schoolwithyou/',
-             webUrl: 'https://sen.go.kr/schoolwithyou/',
-           },
-         },
-         buttons: [
-           {
-             title: '웹으로 보기',
-             link: {
-               mobileWebUrl: 'https://sen.go.kr/schoolwithyou/',
-               webUrl: 'https://sen.go.kr/schoolwithyou/',
-             },
-           },
-         ],
-       });
+// Kakao.init('4dc76908be5d88021b7292835f4614fa');
+//       Kakao.Link.createDefaultButton({
+//         container: '#create-kakao-link-btn',
+//         objectType: 'feed',
+//         content: {
+//           title: '#스쿨위드유',
+//           description: '서울특별시교육청 학교 성폭력 온라인 신고센터 #스쿨위드유',
+//           imageUrl:
+//             'https://sen.go.kr/schoolwithyou/img/logo.png',
+//           link: {
+//             mobileWebUrl: 'https://sen.go.kr/schoolwithyou/',
+//             webUrl: 'https://sen.go.kr/schoolwithyou/',
+//           },
+//         },
+//         buttons: [
+//           {
+//             title: '웹으로 보기',
+//            link: {
+//               mobileWebUrl: 'https://sen.go.kr/schoolwithyou/',
+//               webUrl: 'https://sen.go.kr/schoolwithyou/',
+//             },
+//           },
+//         ],
+//       });
