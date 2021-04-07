@@ -2651,4 +2651,9 @@ a.top_btn:visited {
   .text__inner-title--1-3-2 .tooltip {
     display: none;
   }
+
+  .wrap__theme--1-3-2{
+    width: 1280px;
+    margin: auto;
+  }
  }
