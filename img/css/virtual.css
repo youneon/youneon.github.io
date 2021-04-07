@@ -2664,6 +2664,9 @@ a.top_btn:visited {
   .box__description--1-3-2 details p {
     display: none;
   }
+  .title__more.--1-3-2 {
+    width: 1280px;
+  }
   .wrap__button--small--1-3-2 {
     width: 1280px;
     margin: 16px auto 36px;
