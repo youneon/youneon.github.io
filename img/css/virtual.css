@@ -2653,6 +2653,10 @@ a.top_btn:visited {
     display: none;
   }
 
+  .text__tooltip-trigger--1-3-2 {
+    display: none;
+  }
+
   .wrap__theme--1-3-2{
     width: 1280px;
     margin: auto;
