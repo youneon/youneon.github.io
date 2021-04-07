@@ -2617,3 +2617,26 @@ a.btn-layerClose:hover {
 a.top_btn:visited {
   color: #ffffff;
 }
+
+@media screen and (-ms-high-contrast: active), 
+(-ms-high-contrast: none) { 
+  .wrap__theme--1-1-1 {
+    width: 640px;
+    margin-top: 20px;
+  }
+
+  .text__source {
+      text-align: center;
+  }
+
+  .wrap__flex--1-2-3 {
+      width: 1280px;
+      padding: 0 10px 0 10px;
+  }
+
+  .wrap__flex--1-2-3 .wrap__flex--outer-ver.--width-390 {
+      display: inline-block;
+      width: 300px;
+      margin-right: 20px;
+  }
+ }
