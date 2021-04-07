@@ -2661,4 +2661,7 @@ a.top_btn:visited {
     width: 1280px;
     margin: 36px auto;
   }
+  .box__description--1-3-2 details p {
+    display: none;
+  }
  }
