@@ -2624,7 +2624,9 @@ a.top_btn:visited {
     width: 640px;
     margin-top: 20px;
   }
-
+  .box__option--long-round--1-1-1 {
+    width: 100%;
+  }
   .text__source {
       text-align: center;
   }
