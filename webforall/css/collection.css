@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/****SEMA COLOECTION SEARCH ****/
+.collection_searchKeyword{ position:relative;}
+.collection_searchKeyword input {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #000;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+    display: block;
+    min-height: 27px;
+}
+.collection_searchKeyword button{position: absolute; top: 2px;right: 15px;}
+.selectW100p {
+    width: 100%;
+    height: 27px;
+    padding: 0;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #000;
+    background: url(../images/news/select_arrow.png) 100% 47% no-repeat;
+    -webkit-appearance: none; -moz-appearance:none; appearance: none; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;
+    font-size: 14px;
+}
+/******************** ****************************/
+.show_on{ background: #fff;}
+.show_off{color:#888;}
+
+.collect_txt{line-height:1.6; font-size:18px; padding:2% 12%}
+.seach_result{padding-left:10px; margin:2% 0}
+.collectTabMenu ul li{font-size:18px;}
+.collectYear{background:url(../images/common/bg_footer_lineX.png) repeat-x top center;background-size: 100px auto;padding:3% 0;}
+.collectYear h2{margin-bottom:15px;}
+.collectYear .mrb_10{margin-bottom:10px; font-size:18px;}
+.important_txt{display:inline-block;width:400px; font-size:14px;margin:2% 0; padding-left:10px; line-height:1.6}
+
+.hangeul{}
+.hangeul ul{display: inline-block; width:96% ; padding:0 2%}
+.hangeul ul li{float:left; font-weight:bold;width:11%; line-height:1.6;margin-bottom:3%;}
+
+.txt_result{font-size:13px; line-height:1.6}
+.count{font-size:12px; font-weight:bold; display:block; margin:3px 0 7px 0}
+
+
+
+/* 전체 레이아웃 */
+.Collection_wrap { position:relative; clear:both; width:777px;}
+
+/* 무단복제 안됨 */
+.copyNo { font-size:13px; line-height:160%; /*position:absolute;*/ padding-left:10px; bottom:20px; background:#fff;}
+.copyNo_01{ font-size:13px; line-height:160%;}
+/* 타이틀 */
+.collection_contsTtl { font-size:36px; font-weight:600; padding:5px 70px 10px 10px; box-sizing:border-box;}
+.collection_artistTtl { font-size:19px; font-weight:600; padding:5px 10px 0px; box-sizing:border-box;}
+
+.collectionSub_type { font-weight:200; font-size:19px; margin-bottom:24px; overflow:hidden;}
+.collectionSub_type:before, .collectionSub_type:after { background:none !important; padding:0 !important;}
+
+/* 소장품 */
+.collectionWarp { position:relative; width:100%; max-width:777px; padding:10px 0 0 0; }
+.collectionTop_sch { position:relative; clear:both; width:777px;}
+
+
+.collection_searchKeyword {  position:relative; width:100%; -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;}
+.collection_searchKeyword input { position:relative; float:left; width:100%; color:#000;border-bottom:1px solid #000; box-sizing:border-box; display:block; min-height:27px;}
+.collection_searchKeyword button { position:absolute; top:2px; right:15px;}
+.collection_searchKeyword input::-moz-placeholder {  color: #000;  opacity: 1; font-size:16px; text-align:left;}
+.collection_searchKeyword input:-ms-input-placeholder {  color: #000; font-size:16px; text-align:left;}
+.collection_searchKeyword input::-webkit-input-placeholder { color: #000; font-size:16px; text-align:left;}
+.collection_searchKeyword li:nth-child(3) { padding:15px 0 0 0;}
+
+/* 소장품 상세검색*/
+.collection_txt_01{ font-size:20px; line-height:160%;}
+.copyNo_01{ font-size:13px; line-height:160%;}
+.copyNo_02{ font-size:13px; line-height:160%; width:390px;display:inline-block;margin-top:40px;padding-left:10px;background:#fff}
+.total_search{border:1px solid #000; padding:10% 3%; height:auto; box-sizing:border-box;margin:10px auto; background:#fff;}
+.total_search ul{display:inline-block; margin-bottom:20px;width:100%}
+.total_search ul li{float:left; line-height:1.6}
+.total_search ul .subject{width:13%;margin-right:20px;margin-top:6px;}
+.total_search ul .mg_right{margin-right:40px;}
+.total_search ul .mg_right2{margin-right:88px;}
+.collect_sellect{width:160px;}
+.collect_sellect_01{width:130px;}
+.total_search .sellect_with{width:100%}
+.collection_searchKeyword_01 { position:relative; width:28%; display:inline-block; border-bottom:1px solid #000; -webkit-box-sizing: border-box;  -moz-box-sizing: border-box;}
+.collection_searchKeyword_01 input { position:relative; float:left; width:80%; color:#000;box-sizing:border-box; display:block; min-height:33px;}
+.collection_searchKeyword_01 button { position:absolute; top:-1px; right:2px;}
+.collection_searchKeyword_01 input::-moz-placeholder {  color: #000;  opacity: 1; font-size:16px; text-align:left;}
+.collection_searchKeyword_01 input:-ms-input-placeholder {  color: #000; font-size:16px; text-align:left;}
+.collection_searchKeyword_01 input::-webkit-input-placeholder { color: #000; font-size:16px; text-align:left;}
+.collection_searchKeyword_01 li:nth-child(3) { padding:15px 0 0 0;}
+.total_search .search{font-size:25px;margin-top:3%}
+.total_search .search a{position:relative; display:block; width:110px; height:50px;}
+.total_search .search a:after{content:"\f007"; display: inline-block; font: normal normal normal 14px/1 dingding; 
+											font-size:60px;  -webkit-font-smoothing: antialiased; vertical-align:middle;  position:absolute; right:0%; bottom:8%; }
+
+.movieBox_inwrap{background:url(../images/common/bg_footer_lineX.png) repeat-x top center;background-size: 100px auto;padding:3% 0;}
+.movieBox_top .movieBox_txt{font-size:13px;line-height:1.5}
+/*신소장품 - 한국화*/
+.Collect_Img { width:70%;}
+.CollectionView_wrap { position:relative; clear:both; width:100%;}						
+.CollectionView_wrap .img_wrap a:before { content:"\f006"; display: inline-block; font: normal normal normal 14px/1 dingding; font-size:60px;  -webkit-font-smoothing: antialiased; vertical-align:middle; position:absolute; left:50px; top:47%; }
+.CollectionView_wrap .img_wrap a:after { content:"\f007"; display: inline-block; font: normal normal normal 14px/1 dingding; font-size:60px;  -webkit-font-smoothing: antialiased; vertical-align:middle;  position:absolute; right:50px; top:43%; }						
+.CollectionView_wrap img  { width:70%;}
+.CollectionView_theme { float:left; width:259px; box-sizing:border-box; padding:10px 12px 30px 12px;}
+.CollectionView_theme .CollectionView_style { padding: 0 0 30px 0;}
+.CollectionView_theme li:nth-child(1) { border-bottom:1px solid #000; display:inline-block; margin-bottom:3px}
+.CollectionView_Rconts {  float:left; width:517px; box-sizing:border-box; padding:0 12px; line-height:160%;background:#fff;}
+
+.CollectionView_other{ position:relative; float:right; margin:20px 0 0 0; width:518px; padding:0 4em; box-sizing:border-box;}
+.CollectionView_other .swiper-slide{ display:table; text-align:center} 
+.CollectionView_other .swiper-slide>a{ width:100%; display:table-cell; text-align:center; vertical-align:middle; height:120px;}
+.CollectionView_other img{ width:auto; max-width:100%; max-height:120px;}
+.CollectionView_other .next_btn{ vertical-align:middle; position:absolute; right:15px; top:50%; margin-top:3px; width:40px; height:40px;}
+.CollectionView_other .next_btn:before{ content:"\f007"; display:inline-block; font:normal normal normal 14px/1 dingding; font-size: 40px;  -webkit-font-smoothing: antialiased;}
+.CollectionView_other .prev_btn{ vertical-align: middle; position: absolute; left: 15px; top: 50%; margin-top: 3px; width: 40px; height: 40px;}
+.CollectionView_other .prev_btn:before{ content:"\f006"; display: inline-block; font: normal normal normal 14px/1 dingding; font-size: 40px;  -webkit-font-smoothing: antialiased;}
+.Collection_close { position:relative;}
+.Collection_close a { position:absolute; right:85px; top:5px; width:50px; height:50px; display:inline-block; text-align:center; line-height:50px;}
+.Collection_close a:after { content:"\f022"; display:inline-block; font: normal normal normal 14px/1 dingding; font-size:50px;  -webkit-font-smoothing: antialiased; vertical-align:middle;  z-index:1000; }
+
+
+/* SeMA Collection 텍스트 */
+.Collection_txt { line-height:160%; margin-bottom:30px;}
+
+
+/* 소장품 작가 */
+.collection_Artist { font-size:19px; padding:0 0 10px 0;}
+.collection_Artist span { display:block; font-size:25px;}
+
+/* 더보기 */
+.moreView { position:relative; font-size:25px; line-height:160%; padding-left:12px;}
+.moreView a:after { content:"\f009"; display:inline-block; font: normal normal normal 14px/1 dingding; font-size:70px;  -webkit-font-smoothing: antialiased; vertical-align:middle; padding-left:20px ;z-index:1000; }
+
+
+/****************************************************************************************/
+/****************************************************************************************/
+/*Media Query*/
+/****************************************************************************************/
+/****************************************************************************************/
+
+@media all and (min-width:767px) and (max-width:1024px){ 
+
+.collectionSub_type { position:absolute; top:50px; left:5px;}
+
+}
+
+
+@media all and (min-width:768px) and (max-width:1100px){ /* 테블릿 */
+
+	/* 전체 레이아웃 */
+	.Collection_wrap { position:relative; clear:both; width:100%;}
+
+	/*신소장품 - 한국화*/
+	.Collect_Img { width:95%;}
+	.CollectionView_wrap .img_wrap { width:90%; margin:0 auto;}
+	.CollectionView_theme { float:left; width:182px; box-sizing:border-box; padding:10px 12px 30px 12px;}
+	.CollectionView_theme .CollectionView_style { padding: 0 0 30px 0;}
+	.CollectionView_theme li:nth-child(1) { border-bottom:1px solid #000; line-height:150%; display:inline-block}
+	.CollectionView_Rconts {  float:left; width:545px; box-sizing:border-box; padding:0 12px; line-height:160%;}
+	.CollectionView_other { width:360px; }
+	.Collection_close { position:relative;}
+	.Collection_close a:after { content:"\f022"; display:inline-block; font: normal normal normal 14px/1 dingding; font-size:50px;  -webkit-font-smoothing: antialiased; vertical-align:middle; position:absolute; right:100px; top:-25px; z-index:1000; }
+
+}
+
+
+
+@media all and (max-width:767px){/*모바일*/
+	.collect_txt{padding:2%;}
+	.seach_result{margin:4% 0 7% 0}
+}
+
+@media all and (max-width:768px){  /* 테블릿적용 세로 */
+
+	.collectionSub_type { position:absolute; top:55px; left:5px;font-weight:200; font-size:15px; margin-bottom:30px; }
+
+	/* 전체 레이아웃 */
+	.Collection_wrap { position:relative; clear:both; width:100%}
+
+	/*신소장품 - 한국화*/
+	.Collect_Img { width:95%;}
+	.CollectionView_wrap .img_wrap { width:90%; margin:0 auto;}
+	.CollectionView_theme { float:none; width:100%; box-sizing:border-box; padding:10px 12px 30px 12px;}
+	.CollectionView_theme .CollectionView_style { float:left; width:33.3%; padding: 0 0 30px 0; word-break:break-all;}
+	.CollectionView_theme .CollectionView_style:nth-child(3n+1){ clear:both;}
+	.CollectionView_Rconts { clear:both;  float:none; width:80%; margin:0 auto; box-sizing:border-box; padding:0 12px; line-height:160%;}
+
+	.CollectionView_other { width:100%; }
+	.CollectionView_wrap .img_wrap a:before { content:"\f006"; display: inline-block; font: normal normal normal 14px/1 dingding; font-size:60px;  -webkit-font-smoothing: antialiased; vertical-align:middle; position:absolute; left:10px; top:47%; }
+	.CollectionView_wrap .img_wrap a:after { content:"\f007"; display: inline-block; font: normal normal normal 14px/1 dingding; font-size:60px;  -webkit-font-smoothing: antialiased; vertical-align:middle;  position:absolute; right:10px; top:43%; }
+
+	.Collection_close a:after { content:"\f022"; display:inline-block; font: normal normal normal 14px/1 dingding; font-size:50px;  -webkit-font-smoothing: antialiased; vertical-align:middle; position:absolute; right:65px; top:-22px; z-index:1000; }
+	.total_search{width:98%}
+}
+
+
+
+@media all and (max-width:478px){/* 모바일 */
+
+	.location .collectionSub_type { position:absolute; top:33px; left:5px;font-weight:200; font-size:13px; margin-bottom:30px; border:none; }
+
+	/*신소장품 - 한국화*/
+	.Collect_Img { width:65%;}
+	.CollectionView_theme { float:none; width:100%; box-sizing:border-box; padding:10px 0 30px 0;}
+	.CollectionView_theme .CollectionView_style { float:left; width:50%; padding:12px 0 30px 12px;box-sizing:border-box;  word-break:break-all;}
+	.CollectionView_theme .CollectionView_style:nth-child(3n+1){ clear:none;}
+	.CollectionView_theme .CollectionView_style:nth-child(2n+1){ clear:both;}
+	.CollectionView_Rconts { clear:both;  float:none; width:100%; margin:0 auto; box-sizing:border-box; padding:0 12px; line-height:160%;}
+	.CollectionView_other { position:relative; /*float:none;*/ margin:20px 0 0 0px;}
+	.Collection_close a:after { content:"\f022"; display:inline-block; font: normal normal normal 14px/1 dingding; font-size:40px;  -webkit-font-smoothing: antialiased; vertical-align:middle; position:absolute; right:50px; top:-22px; z-index:1000; }
+
+	/* 타이틀 */
+	.collection_contsTtl { font-size:2em; font-weight:400; padding:5px 80px 10px 12px; box-sizing:border-box; word-break:break-all;}
+
+	.total_search{padding:10% 6%}
+	.total_search ul{margin-bottom:0;}
+	.total_search ul .subject{width:21%; margin-bottom:15px}
+	.collection_searchKeyword_01{width:50%;margin-bottom:15px}
+	.collection_searchKeyword_01 button{top:7px;}
+}
+
+
+@media all and (max-width:320px){/* 모바일 */
+
+.location .collectionSub_type { position:absolute; top:35px; left:5px;font-weight:200; font-size:13px; margin-bottom:30px; border:none; }
+
+
+
+}
+
+
+/* 190925 소장품리뉴얼용 추가 */
+.CollectionView_Rconts.collection_null{height:auto;}
+.CollectionView_Rconts.collection_off{height:auto;}
+/* .CollectionView_Rconts.collection_on{height:579px;overflow:hidden;} */
+
+.Collection_wrap .btn_more{padding:30px 0;clear:both;text-align:center;margin-left:259px;max-width:517px;}
+.Collection_wrap .btn_more a{display:block;position:relative;height:45px;line-height:45px;font-size:18px;background:#fff;}
+.Collection_wrap .btn_more a:after{content: "\f022";position:absolute;right:30px;top:0;display: inline-block;font: normal normal normal 14px/1 dingding;font-size: 45px;-webkit-font-smoothing: antialiased;vertical-align: middle;}
+.Collection_wrap .btn_more a.on:after{content:'\f027';}
+.CollectionMain_wrap .TotalSearch_gallery_conts{float:none;overflow:hidden;}
+.CollectionMain_wrap .TotalSearch_gallery_conts a{display:block;}
+.CollectionMain_wrap .TotalSearch_gallery{float:none;}
+@media only screen and (max-width: 1100px){
+	.Collection_wrap .btn_more{margin-left:182px;max-width:363px;}
+}
+@media only screen and (max-width: 770px){
+	.CollectionMain_wrap .tab_link > ul > li{width:48%;margin-bottom:2%;}
+	.CollectionMain_wrap .splitbox [class*='colboxs']{width:100%;}
+	.splitbox [class*='colboxs']{}
+	.Collection_wrap .btn_more{margin:0 auto;max-width:567px;}
+}
