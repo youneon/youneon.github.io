@@ -83,7 +83,7 @@
 .main-intro .pic{ display:block; background-size:cover; background-position:center top; background-repeat:no-repeat; text-indent:-9999px;}
 .main .lstRange .colboxs1 > a{display: block}
 
-.manual-desc {margin-top: 7vw; padding: 1vw;}
+.manual-desc {margin-top: 10vh; padding: 1vw;}
 .how-to-use {display: flex; padding: 1vw;}
 .how-to-use li {flex: 1;}
 .how-to-use li h3 {font-size: 1.75rem; margin-bottom:1vw;}
