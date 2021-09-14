@@ -106,9 +106,13 @@ body {height: auto;}
 .bgclr_black li .category {font-size: 1.25rem; margin-bottom: 0;}
 .bgclr_black li .category.add-space {margin-right: 26px;}
 .bgclr_black li .category.list-top {border-bottom: 0;}
-.bgclr_black li .category.list-middle {border-right: 0; border-bottom: 0;}
+.bgclr_black li .category.list-middle {border-right: 0;}
 .bgclr_black li .category.list-middle.edge {border-right: 1px solid #000;}
-.bgclr_black li .category.list-middle.border-edge {border-bottom:1px solid #000;}
+.bgclr_black li .category.border-edge {border-top:0; border-right: 0;}
+.bgclr_black li .category.border-edge.edge {border-right: 1px solid #000;}
+.bgclr_black li .category.list-bottom{border-top:0;}
+.bgclr_black li .category.collaboration {padding: 5px 5.5px 5px;}
+.bgclr_black li .category.on {background-color: #000; color: #fff;}
 .marquee-text {overflow: hidden; padding: 12px 0px; white-space: nowrap;}
 .marquee-text h1 { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite;}
 @keyframes marquee{0%{transform:translate(0)}to{transform:translate(-100%)}}
@@ -165,7 +169,8 @@ body {height: auto;}
 	.manual-des h2 {font-size: 4vw; color: #333;}
 	.how-to-use li {padding: 1vh 0;}
 	.next-link {width: 100%;}
-	.alt-link {left: 0; width: 100%; background-color: coral;}
+	.alt-link {position: absolute; top: 48px; left: 0; width: 100%; background-color: coral;}
+	.bgclr_black {width: 244px;}
 	.main .contents {padding: 0;}
 	.footer-area {position: unset; margin-left: calc(50% - 160px);	margin-top: 20px; width: auto;}
 	.footer-area.footer-bg {position: absolute; bottom:2vh; left:calc(50% - 160px); margin: 0;}
