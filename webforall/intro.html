@@ -25,25 +25,7 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
 
 </head>
-<script>
-	var index = -1; 
-	
-	jQuery('#rudder').bind('keydown', function(e){ 
-		var size = jQuery(e.currentTarget).children().length - 1; if (index < -1) { return; } 
-		
-		if (e.keyCode === 37 && index > 0) {
-			--index; 
-		} else if (e.keyCode === 39 && index < size){ 
-			++index; } else if(e.keyCode === 9) {
-			index = -1; 
-		return; 
-		} else { 
-		return; 
-		} 
-		
-		jQuery(e.currentTarget).children()[index].focus();
-	})
-</script>
+
 <body>
 	<header class="main-intro" role="banner">
 		<h1 class="hd-txt" tabindex="1"><em>모두가 웃는 웹 'web for all'</em></h1>
