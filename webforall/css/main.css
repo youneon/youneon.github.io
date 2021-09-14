@@ -78,7 +78,7 @@
 .main-intro{ position:absolute; top:0; width:100%; z-index:99; box-sizing:border-box;}
 .main-intro *{ box-sizing:border-box;}
 .main-intro .inner{ display:block; margin:0; padding:0 50px;}
-.main-intro .hd-txt{ display:block; font-size:5.5vw; padding:20px 0; line-height:1; text-align:justify; white-space:nowrap;}
+.main-intro .hd-txt{ display:block; font-size:5.5vw; padding:20px; line-height:1; text-align:justify; white-space:keep-all;}
 .main-intro .hd-txt em{ display:inline-block; white-space:nowrap; line-height:1;}
 .main-intro .pic{ display:block; background-size:cover; background-position:center top; background-repeat:no-repeat; text-indent:-9999px;}
 .main .lstRange .colboxs1 > a{display: block}
