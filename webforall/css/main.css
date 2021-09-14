@@ -83,22 +83,22 @@
 .main-intro .pic{ display:block; background-size:cover; background-position:center top; background-repeat:no-repeat; text-indent:-9999px;}
 .main .lstRange .colboxs1 > a{display: block}
 
-.manual-desc {margin-top: 10vh; padding: 1vw;}
-.how-to-use {display: flex; padding: 1vw;}
+.manual-desc {margin-top: 15vh; padding: 1vh;}
+.how-to-use {display: flex; padding: 1vh;}
 .how-to-use li {flex: 1;}
-.how-to-use li h3 {font-size: 1.75rem; margin-bottom:1vw;}
+.how-to-use li h3 {font-size: 1.75rem; margin-bottom:1vh;}
 .how-to-use li p {line-height: 1.85;}
 .next-link {display: inline-block;
     background-color: #00dcff;
     color: #000;
     border: 1px solid #000;
     box-sizing: border-box;
-    padding: .5vw .4vw;
+    padding: 1vh 1vh;
     font-size: 1.5rem;
     font-family: 'Apercu-Medium','notokr-bold';
     text-align: center;
     margin-bottom: 2px;
-    line-height: 15px;
+    line-height: 1.2em;
     letter-spacing: 1px;}
 .collection-box.hard-of-hearing {display: none;}
 .collection-box.small-line-height {line-height: 10%;}
