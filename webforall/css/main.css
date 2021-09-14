@@ -128,7 +128,7 @@
 	.main-intro .hd-txt em{ display:inline-block; line-height:1.2;}
 	.main-desc {position: relative; color: #ffffff;}
 	.main-desc img{ height: 100vh;}
-	.main-desc span {position:absolute; left: 10vw; bottom: 10vh; font-size: 1.5rem;}
+	.main-desc span {position:absolute; left: 10vw; bottom: calc(20% - 80px); font-size: 1.5rem;}
 	.manual-desc {margin-top: 9vh;}
 	.how-to-use {display: block;}
 	.how-to-use li {padding: 1vh 0;}
@@ -145,7 +145,7 @@
 	.main-intro .hd-txt em{ display:block; line-height:1.2;}
 	.main-desc {position: relative; color: #ffffff;}
 	.main-desc img{ height: 100vh;}
-	.main-desc span {position:absolute; left: 10vw; bottom: 10vh; font-size: 1.5rem;}
+	.main-desc span {position:absolute; left: 10vw; bottom: calc(20% - 80px); font-size: 1.5rem;}
 	.manual-desc {margin-top: 9vh;}
 	.how-to-use {display: block;}
 	.manual-des h2 {font-size: 4vw; color: #333;}
