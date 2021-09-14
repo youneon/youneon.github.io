@@ -83,6 +83,8 @@
 .main-intro .pic{ display:block; background-size:cover; background-position:center top; background-repeat:no-repeat; text-indent:-9999px;}
 .main .lstRange .colboxs1 > a{display: block}
 
+.how-to-use {display: flex; padding: 1vw;}
+.how-to-use>p {flex: 1;}
 .collection-box.hard-of-hearing {display: none;}
 .collection-box.small-line-height {line-height: 10%;}
 /* .collection-box .collection_on {line-height: 50%;} */
@@ -98,9 +100,8 @@
 }
 @media all and (min-width:480px) and (max-width:1024px){
 	.m_news .bt_z a.bt-go{ display:block;}
-
 	.main-intro{ position:absolute; top:0; width:100%; z-index:99; }
-	.main-intro .inner{ margin:0; padding:0 28px;}
+	.main-intro .inner{margin:0; padding:0 28px;}
 	.main-intro .hd-txt{ font-size:9vw; padding:20px 0 45px; line-height:1.2;}
 	.main-intro .hd-txt em{ display:block; line-height:1.2;;}
 	.main-intro img{ width:100%;}
@@ -110,7 +111,6 @@
 @media only screen and (min-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2){
 	.fix_menu_wrap .m_news,
 	.fix_menu_wrap .m_news.on_menu{ display:none !important;}
-
 	.main-intro{ position:absolute; top:0; width:100%; z-index:99; }
 	.main-intro .inner{ margin:0; padding:0;}
 	.main-intro .hd-txt{ font-size:4.4vw; padding:20px 20px 45px; line-height:1.2;}
