@@ -17,7 +17,7 @@ blockquote, q{quotes:none}
 blockquote:before, blockquote:after, q:before, q:after{content: ''; content: none}
 table{border-collapse:separate; border-spacing:0}
 img{vertical-align:middle}
-a{text-decoration:none; cursor:pointer; color: #222}
+a {text-decoration:none; cursor:pointer; color: #222}
 a:active, a:hover{text-decoration: none}
 input, select, label{vertical-align:middle}
 input, select, textarea, button{font-size: 100%; vertical-align: middle; padding: 0; margin: 0}
