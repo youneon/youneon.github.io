@@ -13,11 +13,10 @@
 	<meta name="viewport" content="width=device-width"> 
 	<meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
 	<!-- Favicon -->
-	<link rel="SHORTCUT ICON" href="/resources/images/common/favicon.ico">
 	<link rel="apple-touch-icon" href="/resources/images/common/bookmark.jpg"><!-- 애플 아이콘 -->
 	<link rel="apple-touch-icon-precomposed" href="/resources/images/common/bookmark.jpg"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="./css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./css/font.css">
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/common.css">
     <link rel="stylesheet" type="text/css" href="./css/inc.css">
@@ -28,18 +27,6 @@
 	<script type="text/javascript" src="./js/jquery.js"></script>
 
 </head>
-<script type="text/javascript">
-
-	$(document).ready(function(){
-		console.log('text')
-		var classes = ["white-text", "small-line-height", "hard-of-hearing", "none-style"];
-		
-		$(".artwork-desc-wrap").each(function(){
-			$(this).addClass(classes[~~(Math.random()*classes.length)]);
-		});
-	});
-	
-</script>
 <body>
     <div id="wrap" class="main">
 
@@ -342,7 +329,18 @@
 	</div>
 </div>
 </div>
+<script type="text/javascript">
 
+	$(document).ready(function(){
+		console.log('text')
+		var classes = ["white-text", "small-line-height", "hard-of-hearing", "none-style"];
+		
+		$(".artwork-desc-wrap").each(function(){
+			$(this).addClass(classes[~~(Math.random()*classes.length)]);
+		});
+	});
+	
+</script>
 </body>
 </html><!-- //footer영역(e) -->
 
