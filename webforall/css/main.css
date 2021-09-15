@@ -101,7 +101,7 @@ body {height: auto;}
 /* .collection-box .collection_on {line-height: 50%;} */
 .collection-box.white-text {color: #eee;}
 .heading-text .collection_contsTtl.colboxs2 {position:absolute; bottom:-8vh; left: 300px;} 
-.collection_artistTtl {position:absolute; bottom:-10vh; left: 300px;}
+/* .collection_artistTtl {position:absolute; bottom:-10vh; left: 300px;} */
 .alt-link {position: fixed; top: 120px; background-color: coral; width: 250px; float: none; left: 2.2vw; padding: 12px;}
 .bgclr_black li .category {font-size: 1.25rem; margin-bottom: 0;}
 .bgclr_black li .category.add-space {margin-right: 26px;}
@@ -113,6 +113,52 @@ body {height: auto;}
 .bgclr_black li .category.list-bottom{border-top:0;}
 .bgclr_black li .category.collaboration {padding: 5px 5.5px 5px;}
 .bgclr_black li .category.on {background-color: #000; color: #fff;}
+.lang_wrap {top: 64px; left: 1080px; right: 2vw;}
+.collection-box {display: flex; max-width: 756px;}
+.artwork-info {flex: 1;}
+.artwork-desc {flex: 2;}
+.artwork-content {position: relative;
+    clear: both;
+    width: 777px;}
+.artwork-list{font-size: 36px;
+    font-weight: 600;
+    padding: 5px 70px 10px 10px;
+    box-sizing: border-box;}
+.artwork-tit {    font-size: 19px;
+    font-weight: 600;
+    padding: 5px 10px 0px;
+    box-sizing: border-box;}
+.artist-name {
+	float: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 5px 10px 0px;
+    box-sizing: border-box;}
+.artwork-info {    float: none;
+
+    box-sizing: border-box;
+    padding: 10px 12px 30px 12px;}
+.artwork-info .artwork-style-desc{padding: 0 0 30px 0;}
+.artwork-info dt {    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin-bottom: 3px;}
+.artwork-info dd {
+	padding-bottom: 16px;
+}
+.artwork-desc {
+	float: none;
+    box-sizing: border-box;
+    padding: 0 12px;
+    line-height: 160%;
+    background: #fff;
+}
+.artwork-pic {
+	padding: 0 0 24px 0;
+}
+.artwork-pic img {
+	width: 320px;
+}
+.caution {padding-top: 1.5vh; display: inline-block;}
 .footer {z-index: 3;}
 .marquee-text {overflow: hidden; padding: 12px 0px; white-space: nowrap;}
 .marquee-text h1 { display: inline-block; padding-left: 100%; animation: marquee 20s linear infinite;}
