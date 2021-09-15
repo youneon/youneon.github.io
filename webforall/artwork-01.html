@@ -25,9 +25,21 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" type="text/css" href="./css/sub.css">
     <link rel="stylesheet" type="text/css" href="./css/collection.css">
+	<script type="text/javascript" src="./js/jquery.js"></script>
 
 </head>
+<script type="text/javascript">
 
+	$(document).ready(function(){
+		console.log('text')
+		var classes = ["white-text", "small-line-height", "hard-of-hearing", "none-style"];
+		
+		$(".artwork-desc-wrap").each(function(){
+			$(this).addClass(classes[~~(Math.random()*classes.length)]);
+		});
+	});
+	
+</script>
 <body>
     <div id="wrap" class="main">
 
@@ -131,7 +143,7 @@
 	<div id="contents" class="contents"> 
 		
 		<!-- 우측 상단 아이콘 영역 -->
-        <div class="Display_AllWrap">    
+        <div class="artwork-desc-wrap">    
         	<div class="artwork-content">
            
            		<h3 class="artist-name colboxs2" tabindex="1">한애규
