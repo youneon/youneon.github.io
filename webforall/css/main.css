@@ -128,33 +128,19 @@ body {height: auto;}
     box-sizing: border-box;}
 .artist-name {
 	float: none;
+	display: block;
     font-size: 2.5rem;
     font-weight: 600;
     padding: 5px 10px 0px;
-    box-sizing: border-box;}
-.artwork-info {    float: none;
-
     box-sizing: border-box;
-    padding: 10px 12px 30px 12px;}
+	background-color: #fff;}
+.artwork-info {float: none; box-sizing: border-box; padding: 10px 12px 30px 12px;}
 .artwork-info .artwork-style-desc{padding: 0 0 30px 0;}
-.artwork-info dt {    border-bottom: 1px solid #000;
-    display: inline-block;
-    margin-bottom: 3px;}
-.artwork-info dd {
-	padding-bottom: 16px;
-}
-.artwork-desc {
-	float: none;
-    box-sizing: border-box;
-    padding: 0 12px;
-    background: #fff;
-}
-.artwork-pic {
-	padding: 0 0 24px 0;
-}
-.artwork-pic img {
-	width: 320px;
-}
+.artwork-info dt {border-bottom: 1px solid #000; display: inline-block; margin-bottom: 3px;}
+.artwork-info dd {padding-bottom: 16px;}
+.artwork-desc {float: none; box-sizing: border-box; padding: 0 12px; background: #fff;}
+.artwork-pic {padding: 0 0 24px 0;}
+.artwork-pic img {width: 320px;}
 .caution {padding-top: 1.5vh; display: inline-block;}
 .footer {z-index: 3;}
 .marquee-text {overflow: hidden; padding: 12px 0px; white-space: nowrap;}
@@ -163,12 +149,12 @@ body {height: auto;}
 
 
 /* .artwork-desc-wrap.hard-of-hearing {display: none;} */
-.artwork-desc-wrap {line-height: 160%;}
+.artwork-desc-wrap {position: relative; line-height: 160%;}
 .artwork-desc-wrap.small-line-height {line-height: 10%;}
 .artwork-desc-wrap.small-line-height .artwork-desc {line-height: 70%;}
 /* .collection-box .collection_on {line-height: 50%;} */
 .artwork-desc-wrap.white-text {color: #eee;}
-.artwork-desc-wrap.heading-text .artwork-content h3 {position: absolute; bottom: 30vh;}
+.artwork-desc-wrap.heading-text h3 {position: absolute; bottom: 50vh;}
 .artwork-desc-wrap.heading-text .artwork-pic {position: absolute; bottom: 20vh;}
 
 .header {width: 100%;}

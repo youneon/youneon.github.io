@@ -326,7 +326,7 @@
 }
 /* .footer .wamark{display: none} */
 .btntop{
-	/*display: none;*/
+	display: none;
 	position: fixed;
 	width: 50px;
 	height: 50px;
@@ -604,7 +604,9 @@
 	.fix_menu .search_wrap .category .fa.fa-search:before{
 		font-size: 20px
 	}
-	
+	.btntop{
+        display: block;
+    }
 	.footer{ margin:240px 0 0 0;padding:10px;	}
 	.footer .logo_area{left:10px}
 	.footer .s_info .splitbox [class*="colboxs"]{
