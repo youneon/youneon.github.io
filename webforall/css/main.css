@@ -161,7 +161,7 @@ body {height: auto;}
 .artwork-desc-wrap.small-line-height .artwork-desc {line-height: 70%;}
 /* .collection-box .collection_on {line-height: 50%;} */
 .artwork-desc-wrap.white-text {color: #eee;}
-.artwork-desc-wrap.heading-text h3 {position: absolute; bottom: 50vh;}
+.artwork-desc-wrap.heading-text h3 {position: absolute; bottom: 64vh;}
 .artwork-desc-wrap.heading-text .artwork-pic {position: absolute; bottom: 20vh;}
 
 .header {width: 100%;}

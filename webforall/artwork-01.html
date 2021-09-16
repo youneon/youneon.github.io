@@ -61,7 +61,7 @@
 				<li><a href="artwork-20.html" alt="민영순" class="category list-bottom add-space">민영순</a></li>
 				<li><a href="artwork-21.html" alt="윤진미" class="category list-bottom add-space">윤진미</a></li>
 			</ul>
-			<p style="padding-top: 10px; display: inline-block;"> *상자를 클릭하면 작가의 작품을 보실 수 있습니다.</p>
+			<p> *상자를 클릭하면 작가의 작품을 보실 수 있습니다.</p>
 		</nav>
     </header>
 <!--  GNB  -->
@@ -330,7 +330,7 @@
 
 	$(document).ready(function(){
 		console.log('text')
-		var classes = ["white-text", "small-line-height", "heading-text"];
+		var classes = ["white-text", "small-line-height", "heading-text", 'style-none'];
 		
 		$(".artwork-desc-wrap").each(function(){
 			$(this).addClass(classes[~~(Math.random()*classes.length)]);
