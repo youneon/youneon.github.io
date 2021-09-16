@@ -214,6 +214,7 @@ body {height: auto;}
 	.bgclr_black {width: 244px;}
 	.main .contents {padding: 0;}
 	
+	.contents {margin-top: 33vw;}
 	.artwork-pic img {width: 100vw;}
 	.footer-area {position: unset; margin-left: calc(50% - 160px);	margin-top: 20px; width: auto;}
 	.footer-area.footer-bg {position: absolute; bottom:2vh; left:calc(50% - 160px); margin: 0;}
