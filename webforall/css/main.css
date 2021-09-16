@@ -101,8 +101,15 @@ body {height: auto;}
 .heading-text .collection_contsTtl.colboxs2 {position:absolute; bottom:-8vh; left: 300px;} 
 /* .collection_artistTtl {position:absolute; bottom:-10vh; left: 300px;} */
 .alt-link {position: fixed; top: 120px; background-color: coral; width: 250px; float: none; left: 2.2vw; padding: 12px;}
+.alt-link p {padding-top: 10px; display: inline-block;}
+/* 
+.bgclr_black {    display: flex;
+    width: 100%;
+}
+.bgclr_black li {width: 28px;} */
+.bgclr_black li a {width:28px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .bgclr_black li .category {font-size: 1.25rem; margin-bottom: 0;}
-.bgclr_black li .category.add-space {margin-right: 26px;}
+.bgclr_black li .category.add-space {margin-right: 28px;}
 .bgclr_black li .category.list-top {border-bottom: 0;}
 .bgclr_black li .category.list-middle {border-right: 0;}
 .bgclr_black li .category.list-middle.edge {border-right: 1px solid #000;}
