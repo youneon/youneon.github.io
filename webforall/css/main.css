@@ -220,6 +220,7 @@ body {height: auto;}
 	/* moblie none */
 	.artwork-desc-wrap.heading-text h3 {position: unset;}
 	.artwork-desc-wrap.heading-text .artwork-pic {position: unset;}
+	.artwork-content {width: auto;}
 }
 
 @media all and (max-width:768px){
