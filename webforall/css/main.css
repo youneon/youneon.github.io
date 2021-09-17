@@ -101,7 +101,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 
 .heading-text .collection_contsTtl.colboxs2 {position:absolute; bottom:-8vh; left: 300px;} 
 /* .collection_artistTtl {position:absolute; bottom:-10vh; left: 300px;} */
-.alt-link {position: fixed; top: 120px; background-color: coral; width: 250px; float: none; left: 2.2vw; padding: 12px;}
+.alt-link {position: fixed; top: 120px; background-color: coral; width: 230px; float: none; left: 2.2vw; padding: 12px;}
 .alt-link p {padding-top: 10px; display: inline-block;}
 /* 
 .bgclr_black {    display: flex;
@@ -148,7 +148,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .artwork-info dt {border-bottom: 1px solid #000; display: inline-block; margin-bottom: 3px;}
 .artwork-info dd {padding-bottom: 16px;}
 .artwork-desc {float: none; box-sizing: border-box; padding: 0 12px; background: #fff;}
-.artwork-pic {padding: 0 0 24px 0;}
+.artwork-pic {padding: 24px 0;}
 .artwork-pic img {width: 320px;}
 .caution {padding-top: 1.5vh; display: inline-block;}
 .footer {z-index: 3;}
