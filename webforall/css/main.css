@@ -107,11 +107,12 @@ body {height: auto;}
     width: 100%;
 }
 .bgclr_black li {width: 28px;} */
-.bgclr_black li a {width:28px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.bgclr_black li a {width:28px; overflow: hidden; white-space: nowrap;}
 .bgclr_black li .category {font-size: 1.25rem; margin-bottom: 0;}
 .bgclr_black li .category.add-space {margin-right: 28px;}
 .bgclr_black li .category.list-top {border-bottom: 0;}
 .bgclr_black li .category.list-middle {border-right: 0;}
+.bgclr_black li .category.list-center {border-top: 0; border-right: 0;}
 .bgclr_black li .category.list-middle.edge {border-right: 1px solid #000;}
 .bgclr_black li .category.border-edge {border-top:0; border-right: 0;}
 .bgclr_black li .category.border-edge.edge {border-right: 1px solid #000;}
