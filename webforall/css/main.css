@@ -169,6 +169,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .header {width: 100%;}
 .notice {font-size: 1.25em; padding: 0.5em 1.5em;}
 
+.intro-desc {margin-top: 2vh;}
 .main .contents {padding: 48px 0 20px 293px;}
 .footer-area {margin: 12px auto; width: 320px;}
 .footer-area .copyright {display: block; width: 320px; text-align: center; border: 1px solid #000; box-sizing: border-box; padding: 1vh 1vh;}
