@@ -200,7 +200,6 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.main-desc img{ height: 100vh;}
 	.main-desc span {position:absolute; left: 10vw; bottom: calc(20% - 80px); font-size: 1.5rem;}
 	.manual-desc {margin-top: 14vh;}
-	.how-to-use {display: block;}
 	.how-to-use li {padding: 1vh 0;}
 	
 }
