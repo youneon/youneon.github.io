@@ -29,7 +29,7 @@ button{border: 0 none; background-color: transparent; cursor: pointer; vertical-
 b, strong{font-weight: 600}
 
 html, body, #wrap{
-	height:100%;
+	height:auto;
 }
 
 fieldset{

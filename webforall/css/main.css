@@ -119,7 +119,7 @@ body {height: auto;}
 .bgclr_black li .category.list-bottom{border-top:0;}
 .bgclr_black li .category.collaboration {padding: 5px 5.5px 5px;}
 .bgclr_black li .category.on {background-color: #000; color: #fff;}
-.lang_wrap {top: 64px; left: 1080px; right: 2vw;}
+.lang_wrap {top: 64px; left: auto; right: 2vw;}
 .collection-box {display: flex; max-width: 756px;}
 .artwork-info {flex: 1;}
 .artwork-desc {flex: 2;}
