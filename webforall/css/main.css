@@ -171,7 +171,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 
 .intro-desc {margin-top: 2vh;}
 .main .contents {padding: 48px 0 20px 293px;}
-.footer-area {position: absolute; bottom: 2vh; left: calc(50% - 200px);}
+.footer-area {margin-left: calc(50% - 200px);}
 .footer-area .copyright {display: block; width: 320px; text-align: center; border: 1px solid #000; box-sizing: border-box; padding: 1vh 1vh;}
 
 @media all and (min-width:770px){
