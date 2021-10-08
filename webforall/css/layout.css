@@ -171,6 +171,14 @@ article[class*='colboxs']:last-child{
 	font-size:25px;
 }
 
+@media all and (max-width:479px){
+	body:after{
+		position: unset;
+		background:url('../images/common/t_body_lineY.png') repeat 29px -5px;
+		background-size:182px auto;
+	}
+}
+
 @media all and (min-width:770px){
 	body:after{
 		background:url('../images/common/t_body_lineY.png') repeat 29px -5px;

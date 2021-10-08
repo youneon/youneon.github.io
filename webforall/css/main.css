@@ -123,6 +123,9 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .bgclr_black li .category.on {background-color: #000; color: #fff;}
 .lang_wrap {top: 64px; left: auto; right: 2vw;}
 .collection-box {display: flex; max-width: 756px;}
+.how-to-use-box {position: absolute; top:120px; right:calc(7vw + 234px); width: 400px; height: 500px; background-color: #91a7ff;}
+.alt-link p.desc-menu-m {display: none;}
+.alt-link .bgclr_black::after{display: block; content: '*시각보조도구를 활성화한 후 tab키로 상자를 선택하면 작가이름을 들을 수 있습니다.';}
 .artwork-info {flex: 1;}
 .artwork-desc {flex: 2;}
 .artwork-content {position: relative;
@@ -163,6 +166,10 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .artwork-desc-wrap.small-line-height {line-height: 10%;}
 .artwork-desc-wrap.small-line-height .artwork-desc {line-height: 70%;}
 /* .collection-box .collection_on {line-height: 50%;} */
+.artwork-desc-wrap.white-text .artwork-content::before {display: block; margin: 1vw; content: '정안인들을 위한 보조 텍스트입니다. 색대비가 지켜지지 않은 화면입니다.'; background: blue;}
+.artwork-desc-wrap.small-line-height .artwork-content::before {display: block; margin: 1vw; line-height: 200%; content: '정안인들을 위한 보조 텍스트입니다. 줄간격을 좁힌 화면입니다. 시각보조도구를 활성화 하면 내용을 들을 수 있습니다.'; background: cyan;}
+.artwork-desc-wrap.heading-text .artwork-content::before {display: block; margin: 1vw; content: '정안인들을 위한 보조 텍스트입니다. 작품명과 작가명을 미적인 이유로 이동시켰습니다. 시각보조도구를 활성화 하면 제목-내용순으로 탐색 할 수 있습니다.'; background: yellowgreen;}
+.artwork-desc-wrap.style-none .artwork-content::before {display: block; margin: 1vw; content: '사실 시각장애인들은 이런 보조텍스트가 필요없습니다. 시각보조도구가 있으니까요. 어떤 시각장애인들은 이 기능을 10배속으로 듣고 웹을 빠르게 탐색하기도 합니다.'; background: #fcc419;}
 .artwork-desc-wrap.white-text {color: #eee;}
 .artwork-desc-wrap.heading-text h3 {position: absolute; bottom: 64vh;}
 .artwork-desc-wrap.heading-text .artwork-pic {position: absolute; bottom: 20vh;}
@@ -202,7 +209,6 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.main-desc span {position:absolute; left: 10vw; bottom: calc(20% - 80px); font-size: 1.5rem;}
 	.manual-desc {margin-top: 14vh;}
 	.how-to-use li {padding: 1vh 0;}
-	
 }
 
 @media all and (max-width:479px){
@@ -222,6 +228,11 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.next-link {width: 100%;}
 	.alt-link {position: absolute; top: 48px; left: 0; width: 100%; background-color: coral;}
 	.bgclr_black {width: 244px;}
+	.how-to-use-box {display: none;}
+	.desc-menu-m {display: block;}
+	.alt-link p.desc-menu-pc {display: none;}
+	.alt-link .bgclr_black::after{display: block; content: '*시각보조도구를 활성화한 후 상자를 터치하면 작가이름을 들을 수 있습니다.';}
+	.artwork-desc-wrap.heading-text .artwork-content::before {display: block; margin: 1vw; content: ''; background: yellowgreen;}
 	.main .contents {padding: 0;}
 	
 	#contents {margin-top: 33vw;}
