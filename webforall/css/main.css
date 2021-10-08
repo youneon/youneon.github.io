@@ -87,7 +87,7 @@ body {height: auto;}
 
 /* webforall */
 .main-desc img {position: relative; width: 100%; }
-.main-desc span {position:absolute; left: calc(50% - 320px); bottom: 3vh; color: #ffffff; font-size: 1.5rem;}
+.main-desc span {position:absolute; left: calc(50% - 468px); bottom: 3vh; color: #ffffff; font-size: 1.5rem; text-align: center;}
 .main-intro .pic-desc {width: 100%; height: 100%;}
 .manual-desc {padding: 1vh;}
 .manual-desc h2 {font-size: 1.25rem; color: #333; word-break: break-all;}
