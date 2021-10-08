@@ -173,7 +173,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .artwork-desc-wrap.white-text {color: #eee;}
 .artwork-desc-wrap.heading-text h3 {position: absolute; bottom: 64vh;}
 .artwork-desc-wrap.heading-text .artwork-pic {position: absolute; bottom: 20vh;}
-.sub_mgt1 .how-to-use {padding: 1;}
+.sub_mgt1 .how-to-use {padding: 1vw;}
 .header {width: 100%;}
 .notice {font-size: 1.25em; padding: 0.5em 1.5em;}
 
