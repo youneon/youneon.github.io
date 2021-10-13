@@ -201,7 +201,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.btntop button::before {content: ''; background: ;}
 	.btntop button {padding:4px; text-align: center; color: #ffffff;}
 	.sub_mgt1 .how-to-use-box .how-to-use {padding:2vh 1vh 1vh 1vh;;}
-	.how-to-use-box {position: unset; width: 96%; height: auto;}
+	.how-to-use-box {position: unset; width: 96%; height: auto; margin: 0 auto;}
 	.how-to-use-box .how-to-use {display: block}
 	.how-to-use-box ul li:first-child {display: none;}
 	.how-to-use-box ul li:last-child {display: block;}
@@ -241,7 +241,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.next-link {line-height: 1.9em;}
 	.bgclr_black {width: 244px;}
 	.sub_mgt1 .how-to-use-box .how-to-use {padding:2vh 1vh 1vh 1vh;}
-	.how-to-use-box {position: unset; width: 96%; height: auto;}
+	.how-to-use-box {position: unset; width: 96%; height: auto; margin: 0 auto;}
 	.how-to-use-box .how-to-use {display: block}
 	.how-to-use-box ul li:first-child {display: none;}
 	.how-to-use-box ul li:last-child {display: block;}
