@@ -124,6 +124,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .lang_wrap {top: 64px; left: auto; right: 2vw;}
 .collection-box {display: flex; max-width: 756px;}
 .how-to-use-box {position: absolute; top:120px; right:calc(7vw + 234px); width: 400px; height: 500px; background-color: #91a7ff;}
+.how-to-use-box li:last-child {display: none;}
 .alt-link p.desc-menu-m {display: none;}
 .alt-link .bgclr_black::after{display: block; content: '*시각보조도구를 활성화한 후 tab키로 상자를 선택하면 작가이름을 들을 수 있습니다. 엔터(enter)키를 누르면 작품페이지로 이동합니다.';}
 .artwork-info {flex: 1;}
@@ -190,11 +191,19 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 }
 @media all and (min-width:480px) and (max-width:1024px){
 	.m_news .bt_z a.bt-go{ display:block;}
-	.main-intro{ position:absolute; top:0; width:100%; z-index:99; }
+	.how-to-use li {margin: 8px;}
 	.main-intro .inner{margin:0; padding:0 28px;}
-	.main-intro .hd-txt{ font-size:9vw; padding:20px 0 45px; line-height:1.2; border-bottom: 1px solid #000;}
+	.main-intro .hd-txt{ font-size:8.5vw; padding:12px; line-height:1.2; border-bottom: 1px solid #000; }
 	.main-intro .hd-txt em{ display:block; line-height:1.2;;}
 	.main-intro img{ width:100%;}
+	.collection-box {display: block;}
+	.btntop {background-color: #000000;}
+	.btntop button::before {content: ''; background: ;}
+	.btntop button {padding:4px; text-align: center; color: #ffffff;}
+	.sub_mgt1 .how-to-use-box .how-to-use {padding:2vh 1vh 1vh 1vh;;}
+	.how-to-use-box {position: unset; width: 96%; height: auto;}
+	.how-to-use-box ul li:first-child {display: none;}
+	.how-to-use-box ul li:last-child {display: block;}
 }
 
 @media only screen and (min-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2){
@@ -227,14 +236,19 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.how-to-use li {padding: 1vh 0;}
 	.next-link {width: 100%;}
 	.alt-link {position: absolute; top: 48px; left: 0; width: 100%; background-color: coral;}
+	.next-link {line-height: 1.9em;}
 	.bgclr_black {width: 244px;}
-	.how-to-use-box {display: none;}
+	.sub_mgt1 .how-to-use-box .how-to-use {padding:2vh 1vh 1vh 1vh;}
+	.how-to-use-box {position: unset; width: 96%; height: auto;}
+	.how-to-use-box ul li:first-child {display: none;}
+	.how-to-use-box ul li:last-child {display: block;}
 	.desc-menu-m {display: block;}
 	.alt-link p.desc-menu-pc {display: none;}
 	.alt-link .bgclr_black::after{display: block; content: '*시각보조도구를 활성화한 후 상자를 터치하면 작가이름을 들을 수 있습니다.';}
 	.artwork-desc-wrap.heading-text .artwork-content::before {display: block; margin: 1vw; content: ''; background: yellowgreen;}
 	.main .contents {padding: 0;}
-	
+
+
 	#contents {margin-top: 33vw;}
 	.artwork-pic img {width: 100vw;}
 	.footer-area {position: unset; margin-left: calc(50% - 160px);	margin-top: 20px; width: auto;}
