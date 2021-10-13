@@ -168,7 +168,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .artwork-desc-wrap.small-line-height .artwork-desc {line-height: 70%;}
 /* .collection-box .collection_on {line-height: 50%;} */
 .artwork-desc-wrap.white-text .artwork-content::before {display: block; margin: 1vw; content: '정안인들을 위한 보조 텍스트입니다. 색대비가 지켜지지 않은 화면입니다.'; background: blue;}
-.artwork-desc-wrap.small-line-height .artwork-content::before {display: block; margin: 1vw; line-height: 200%; content: '정안인들을 위한 보조 텍스트입니다. 줄간격을 좁힌 화면입니다. 시각보조도구를 활성화 하면 내용을 들을 수 있습니다.'; background: cyan;}
+.artwork-desc-wrap.small-line-height .artwork-content::before {display: block; margin: 1vw; width: auto; line-height: 200%; content: '정안인들을 위한 보조 텍스트입니다. 줄간격을 좁힌 화면입니다. 시각보조도구를 활성화 하면 내용을 들을 수 있습니다.'; background: cyan;}
 .artwork-desc-wrap.heading-text .artwork-content::before {display: block; margin: 1vw; content: '정안인들을 위한 보조 텍스트입니다. 작품명과 작가명을 미적인 이유로 이동시켰습니다. 시각보조도구를 활성화 하면 제목-내용순으로 탐색 할 수 있습니다.'; background: yellowgreen;}
 .artwork-desc-wrap.style-none .artwork-content::before {display: block; margin: 1vw; content: '사실 시각장애인들은 이런 보조텍스트가 필요없습니다. 시각보조도구가 있으니까요. 어떤 시각장애인들은 이 기능을 10배속으로 듣고 웹을 빠르게 탐색하기도 합니다.'; background: #fcc419;}
 .artwork-desc-wrap.white-text {color: #eee;}
@@ -205,6 +205,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.how-to-use-box .how-to-use {display: block}
 	.how-to-use-box ul li:first-child {display: none;}
 	.how-to-use-box ul li:last-child {display: block;}
+	.artwork-desc-wrap.style-none .artwork-content::before {width: 55%;}
 }
 
 @media only screen and (min-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2){
@@ -262,7 +263,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.btntop {background-color: #000000;}
 	.btntop button::before {content: ''; background: ;}
 	.btntop button {padding:4px; text-align: center; color: #ffffff;}
-
+	
 }
 
 @media all and (max-width:768px){
