@@ -273,6 +273,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.btntop {background-color: #000000;}
 	.btntop button::before {content: ''; background: ;}
 	.btntop button {padding:4px; text-align: center; color: #ffffff;}
+	.copyright-p {padding-left: 8px;}
 	
 }
 
