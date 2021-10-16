@@ -259,7 +259,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 
 	#contents {margin-top: 38vw;}
 	.artwork-pic img {width: 100vw;}
-	.footer-area {position: unset; margin-left: calc(50% - 160px);	margin-top: 20px; width: auto;}
+	.footer-area {position: unset; margin: 1vw; width: auto;}
 	.footer-area.footer-bg {position: unset; bottom:20px; margin: 0;}
 	.footer-area .copyright {width: 100%;}
 	/* moblie none */
