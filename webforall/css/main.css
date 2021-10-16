@@ -237,7 +237,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.main-intro .hd-txt em{ display:block; line-height:1.2;}
 	.main-desc {position: relative; color: #ffffff;}
 	.main-desc img{ height: 100vh;}
-	.main-desc span {position:absolute; left: 10vw; bottom: 12vh; font-size: 1.5rem;}
+	.main-desc span {position:absolute; left: 0vw; bottom: 12vh; font-size: 1.5rem; margin: 1vw 0vw;}
 	.collection-box {display: block;}
 	.how-to-use {display: block;}
 	.manual-des h2 {font-size: 4vw; color: #333;}
