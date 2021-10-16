@@ -123,7 +123,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .bgclr_black li .category.on {background-color: #000; color: #fff;}
 .lang_wrap {top: 64px; left: auto; right: 2vw;}
 .collection-box {display: flex; max-width: 756px;}
-.how-to-use-box {position: absolute; top:120px; right:calc(7vw + 234px); width: 400px; height: 500px; background-color: #91a7ff;}
+.how-to-use-box {position: absolute; top:120px; right:2vw; width: 400px; height: 500px; background-color: #91a7ff;}
 .how-to-use-box li:last-child {display: none;}
 .alt-link p.desc-menu-m {display: none;}
 .alt-link .bgclr_black::after{display: block; content: '*시각보조도구를 활성화한 후 tab키로 상자를 선택하면 작가이름을 들을 수 있습니다. 엔터(enter)키를 누르면 작품페이지로 이동합니다.';}
@@ -173,7 +173,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .artwork-desc-wrap.heading-text .artwork-content::before {display: block; margin: 1vw; content: '미적인 이유로 제목의 위치를 바꾸는 경우가 종종 있습니다. 시각보조도구가 잘 작동하여 제목을 바로 찾아가면 좋지만 그렇지 못할 경우 대부분 제목 없이 내용부터 들을 수 있어 전체적인 내용을 파악하기 어려워집니다.'; background: yellowgreen;}
 .artwork-desc-wrap.style-none .artwork-content::before {display: block; margin: 1vw; content: '사실 시각장애인들은 이런 보조텍스트가 필요없습니다. 시각보조도구가 있으니까요. 어떤 시각장애인들은 이 기능을 10배속으로 듣고 웹을 빠르게 탐색하기도 합니다. 만약 모든 정보가 시각적인 장치없이 10배속으로 오로지 청각만을 통해 전달된다면, 우리는 웹을 잘 탐색 할 수 있을까요? 그런 세상이라면 오히려 시각장애인들이 우리보다 더 능숙하게 탐색할 수 있을 것 같지 않나요?'; background: #fcc419;}
 .artwork-desc-wrap.white-text {color: #eee;}
-.artwork-desc-wrap.heading-text h3 {position: absolute; bottom: 64vh;}
+.artwork-desc-wrap.heading-text h3 {position: absolute; top: 17vh;}
 .artwork-desc-wrap.heading-text .artwork-pic {position: absolute; bottom: 20vh;}
 .sub_mgt1 .how-to-use {padding: .5vw 1vw;}
 .header {width: 100%;}
@@ -183,6 +183,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 .main .contents {padding: 48px 0 20px 293px;}
 .footer-area {margin:1vw; margin-left: calc(50% - 200px);}
 .footer-area .copyright {display: inline-block; width: 320px; text-align: center; border: 1px solid #000; box-sizing: border-box; padding: 1vh 1vh;}
+.copyright-p {padding-left: 12px;}
 
 @media all and (min-width:770px){
 	.mobi_news{ display:none;}
@@ -234,7 +235,7 @@ a.next-link:focus {background-color:#000000; color:#ffffff}
 	.main-intro .hd-txt em{ display:block; line-height:1.2;}
 	.main-desc {position: relative; color: #ffffff;}
 	.main-desc img{ height: 100vh;}
-	.main-desc span {position:absolute; left: 10vw; bottom: 16vh; font-size: 1.5rem;}
+	.main-desc span {position:absolute; left: 10vw; bottom: 18vh; font-size: 1.5rem;}
 	.collection-box {display: block;}
 	.how-to-use {display: block;}
 	.manual-des h2 {font-size: 4vw; color: #333;}
